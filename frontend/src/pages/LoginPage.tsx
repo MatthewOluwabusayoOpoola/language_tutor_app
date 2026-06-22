@@ -30,7 +30,7 @@ export default function LoginPage() {
 
   return (
     <div className="auth-container">
-      <RetroScene />
+      <RetroScene variant="day" />
       <div className="auth-card win">
         <WinBar label="login.exe" tone="purple" />
         <div className="auth-card-body">

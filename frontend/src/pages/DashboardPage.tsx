@@ -4,6 +4,7 @@ import { getAllProgress, getProfile } from "../api";
 import type { AllProgress, User } from "../types";
 import { useAuthStore } from "../store/auth.store";
 import WinBar from "../components/WinBar";
+import AmbientSky from "../components/AmbientSky";
 
 const MAX_DAYS = 3;
 
@@ -32,6 +33,7 @@ export default function DashboardPage() {
 
   return (
     <div className="dashboard">
+      <AmbientSky />
       <header className="dashboard-header">
         <h1>🇹🇷 Turkish Practice</h1>
         <div className="header-right">

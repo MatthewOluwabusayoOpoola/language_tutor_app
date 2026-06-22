@@ -54,7 +54,7 @@ export default function RegisterPage() {
 
   return (
     <div className="auth-container">
-      <RetroScene />
+      <RetroScene variant="night" />
       <div className="auth-card win">
         <WinBar label="register.exe" tone="pink" />
         <div className="auth-card-body">

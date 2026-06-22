@@ -11,6 +11,7 @@ import { useConversationSocket } from "../hooks/useConversationSocket";
 import { useMicrophone } from "../hooks/useMicrophone";
 import WinBar from "../components/WinBar";
 import RetroScene from "../components/RetroScene";
+import AmbientSky from "../components/AmbientSky";
 
 type Phase =
   | "loading"
@@ -287,7 +288,7 @@ export default function ConversationPage() {
     return (
       <>
         <div className="day-complete">
-          <RetroScene />
+          <RetroScene variant="day" />
           <div className="day-complete-card win">
             <WinBar label="day-complete.exe" tone="mint" />
             <div className="day-complete-card-body">
@@ -334,6 +335,7 @@ export default function ConversationPage() {
 
   return (
     <div className="conversation-page">
+      <AmbientSky />
       {/* Top bar */}
       <div className="conv-topbar">
         <button onClick={() => navigate("/dashboard")} className="btn-back">

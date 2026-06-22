@@ -1,0 +1,2781 @@
+{
+  "app_name": "Turkish Incremental Conversation",
+  "total_days": 3,
+  "days": [
+    {
+      "day": 1,
+      "total_minutes": 5,
+      "new_minutes": 5,
+      "lines": [
+        {
+          "line_number": 1,
+          "speaker": "app",
+          "turkish": "Merhaba!",
+          "slow_phonetic": "Mer-ha-ba",
+          "english": "Hello!",
+          "user_prompt": "Say hello to start the conversation.",
+          "expected_response": "Merhaba",
+          "mispronunciations": ["Mer-hab", "Mar-haba"],
+          "correction_hint": "Keep the vowels even: MER-ha-ba.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 2,
+          "speaker": "user",
+          "expected_response": "Merhaba",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 3,
+          "speaker": "app",
+          "turkish": "Selam! Nasılsın?",
+          "slow_phonetic": "Se-lam! Na-sıl-sın?",
+          "english": "Hi! How are you?",
+          "user_prompt": "Say: I am fine.",
+          "expected_response": "İyiyim",
+          "mispronunciations": ["Ee-yim", "I-yi-yim"],
+          "correction_hint": "The 'İ' is like 'ee' in 'see'. Say: EE-yee-yeem.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 4,
+          "speaker": "user",
+          "expected_response": "İyiyim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 5,
+          "speaker": "app",
+          "turkish": "Ben de iyiyim, teşekkürler. Adın ne?",
+          "slow_phonetic": "Ben de ee-yee-yeem, te-shek-kur-ler. A-dın ne?",
+          "english": "I'm fine too, thanks. What is your name?",
+          "user_prompt": "Say: My name is Matthew.",
+          "expected_response": "Adım Matthew",
+          "mispronunciations": ["A-dam Matthew", "Adin Matthew"],
+          "correction_hint": "Ending with 'm' means 'my'. Say: A-DUM.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 6,
+          "speaker": "user",
+          "expected_response": "Adım Matthew",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 7,
+          "speaker": "app",
+          "turkish": "Memnun oldum Matthew.",
+          "slow_phonetic": "Mem-noon ol-doom Matthew.",
+          "english": "Nice to meet you, Matthew.",
+          "user_prompt": "Say: Me too (Nice to meet you too).",
+          "expected_response": "Ben de memnun oldum",
+          "mispronunciations": ["Ben de mem-nun ol-dum", "Ben da mem-noon"],
+          "correction_hint": "Vowels are deep. Say: Mem-NOON ol-DOOM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 8,
+          "speaker": "user",
+          "expected_response": "Ben de memnun oldum",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 9,
+          "speaker": "app",
+          "turkish": "Nerelisin?",
+          "slow_phonetic": "Ne-re-lee-seen?",
+          "english": "Where are you from?",
+          "user_prompt": "Say: I am from Nigeria.",
+          "expected_response": "Nijeryalıyım",
+          "mispronunciations": ["Ni-jer-ya-li-yim", "Ni-ger-ya-li-yum"],
+          "correction_hint": "The 'j' is soft like 'measure'. Say: Nee-zher-ya-LU-yum.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 10,
+          "speaker": "user",
+          "expected_response": "Nijeryalıyım",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 11,
+          "speaker": "app",
+          "turkish": "Öyle mi? Çok güzel. Ben Türkiyeliyim. Nerede yaşıyorsun?",
+          "slow_phonetic": "Uy-le mee? Chok gu-zel. Ben Tur-kee-ye-lee-yeem. Ne-re-de ya-shu-yor-soon?",
+          "english": "Is that so? Very beautiful. I am from Turkey. Where do you live?",
+          "user_prompt": "Say: I live in Nicosia.",
+          "expected_response": "Lefkoşa'da yaşıyorum",
+          "mispronunciations": ["Lef-ko-sa-da", "Ya-si-yo-rum"],
+          "correction_hint": "‘ş’ is ‘sh’. Say: Lef-KO-sha-da ya-shu-YO-room.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 12,
+          "speaker": "user",
+          "expected_response": "Lefkoşa'da yaşıyorum",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 13,
+          "speaker": "app",
+          "turkish": "Anladım. Ne iş yapıyorsun?",
+          "slow_phonetic": "An-la-dum. Ne eesh ya-pu-yor-soon?",
+          "english": "I see. What is your job?",
+          "user_prompt": "Say: I am an engineer.",
+          "expected_response": "Mühendisim",
+          "mispronunciations": ["Mu-hen-di-sim", "Moo-hen-dees-eem"],
+          "correction_hint": "Round your lips for 'ü'. Say: Mu-hen-dee-SEEM.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 14,
+          "speaker": "user",
+          "expected_response": "Mühendisim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 15,
+          "speaker": "app",
+          "turkish": "Harika bir meslek! Yazılım mühendisi misin?",
+          "slow_phonetic": "Ha-ree-ka beer mes-lek! Ya-zu-lum mu-hen-dee-see mee-seen?",
+          "english": "A great profession! Are you a software engineer?",
+          "user_prompt": "Say: Yes, I am a software engineer.",
+          "expected_response": "Evet, yazılım mühendisiyim",
+          "mispronunciations": ["E-wet", "Ya-zi-lim"],
+          "correction_hint": "'v' is like English 'v'. 'ı' is a closed 'uh' sound. Say: E-VET, ya-zu-LUM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 16,
+          "speaker": "user",
+          "expected_response": "Evet, yazılım mühendisiyim",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 17,
+          "speaker": "app",
+          "turkish": "Çok ilginç. Kaç yaşındasın?",
+          "slow_phonetic": "Chok eel-geench. Kach ya-shun-da-sun?",
+          "english": "Very interesting. How old are you?",
+          "user_prompt": "Say: I am twenty-five years old.",
+          "expected_response": "Yirmi beş yaşındayım",
+          "mispronunciations": ["Yir-mi bes", "Ya-sin-da-yim"],
+          "correction_hint": "Beş (5) has a 'sh' sound. Say: Yeer-mee BESH.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 18,
+          "speaker": "user",
+          "expected_response": "Yirmi beş yaşındayım",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 19,
+          "speaker": "app",
+          "turkish": "Gençsin! Ben otuz yaşındayım. Evli misin?",
+          "slow_phonetic": "Gench-seen! Ben o-tooz ya-shun-da-yum. Ev-lee mee-seen?",
+          "english": "You are young! I am thirty years old. Are you married?",
+          "user_prompt": "Say: No, I am single.",
+          "expected_response": "Hayır, bekarım",
+          "mispronunciations": ["Ha-yir", "Be-ka-rim"],
+          "correction_hint": "Hayır starts with a crisp 'H'. Say: HA-yur, be-KA-rum.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 20,
+          "speaker": "user",
+          "expected_response": "Hayır, bekarım",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 21,
+          "speaker": "app",
+          "turkish": "Anladım. Kardeşin var mı?",
+          "slow_phonetic": "An-la-dum. Kar-de-sheen var mu?",
+          "english": "Understood. Do you have siblings?",
+          "user_prompt": "Say: Yes, I have two brothers.",
+          "expected_response": "Evet, iki erkek kardeşim var",
+          "mispronunciations": ["E-wet", "Er-kek kar-de-sim"],
+          "correction_hint": "'ş' is 'sh'. Say: ee-KEE er-KEK kar-de-SHEEM.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 22,
+          "speaker": "user",
+          "expected_response": "Evet, iki erkek kardeşim var",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 23,
+          "speaker": "app",
+          "turkish": "Ne güzel! Onlar nerede?",
+          "slow_phonetic": "Ne gu-zel! On-lar ne-re-de?",
+          "english": "How nice! Where are they?",
+          "user_prompt": "Say: They are in Nigeria.",
+          "expected_response": "Onlar Nijerya'da",
+          "mispronunciations": ["On-lar Ni-ger-ya-da"],
+          "correction_hint": "Remember the soft 'j'. Say: Nee-ZHER-ya-da.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 24,
+          "speaker": "user",
+          "expected_response": "Onlar Nijerya'da",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 25,
+          "speaker": "app",
+          "turkish": "Anlıyorum. Türkiye'yi seviyor musun?",
+          "slow_phonetic": "An-lu-yo-room. Tur-kee-ye-yee se-vee-yor moo-soon?",
+          "english": "I understand. Do you like Turkey?",
+          "user_prompt": "Say: Yes, I like it very much.",
+          "expected_response": "Evet, çok seviyorum",
+          "mispronunciations": ["Chok se-vi-yo-rum"],
+          "correction_hint": "Vowels are long. Say: se-VEE-yo-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 26,
+          "speaker": "user",
+          "expected_response": "Evet, çok seviyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 27,
+          "speaker": "app",
+          "turkish": "Bu harika! Türk yemeklerini denedin mi?",
+          "slow_phonetic": "Boo ha-ree-ka! Toork ye-mek-le-ree-nee de-ne-deen mee?",
+          "english": "This is great! Have you tried Turkish food?",
+          "user_prompt": "Say: Yes, I tried Kebab.",
+          "expected_response": "Evet, kebap denedim",
+          "mispronunciations": ["Ke-bab", "De-ne-dim"],
+          "correction_hint": "Turkish ends with 'p' in 'kebap'. Say: ke-BAP.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 28,
+          "speaker": "user",
+          "expected_response": "Evet, kebap denedim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 29,
+          "speaker": "app",
+          "turkish": "Afiyet olsun! Kebap çok lezzetlidir. Başka ne seversin?",
+          "slow_phonetic": "A-fee-yet ol-soon! Ke-bap chok lez-zet-lee-deer. Bash-ka ne se-ver-seen?",
+          "english": "Enjoy your meal! Kebab is very delicious. What else do you like?",
+          "user_prompt": "Say: I like tea.",
+          "expected_response": "Çay seviyorum",
+          "mispronunciations": ["Cay", "Chai"],
+          "correction_hint": "'Ç' is 'ch'. Say: CHAY.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 30,
+          "speaker": "user",
+          "expected_response": "Çay seviyorum",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 31,
+          "speaker": "app",
+          "turkish": "Türk çayı harikadır. Şekerli mi içersin?",
+          "slow_phonetic": "Toork cha-yu ha-ree-ka-dur. She-ker-lee mee ee-cher-seen?",
+          "english": "Turkish tea is wonderful. Do you drink it with sugar?",
+          "user_prompt": "Say: No, without sugar.",
+          "expected_response": "Hayır, şekersiz",
+          "mispronunciations": ["Se-ker-siz"],
+          "correction_hint": "Şeker (sugar) starts with 'sh'. Say: she-ker-SEEZ.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 32,
+          "speaker": "user",
+          "expected_response": "Hayır, şekersiz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 33,
+          "speaker": "app",
+          "turkish": "Doğru seçim, daha sağlıklı. Bugün ne yapacaksın?",
+          "slow_phonetic": "Do-roo se-cheem, da-ha sa-luk-lu. Boo-goon ne ya-pa-jak-sun?",
+          "english": "Right choice, healthier. What will you do today?",
+          "user_prompt": "Say: I will go to work.",
+          "expected_response": "İşe gideceğim",
+          "mispronunciations": ["I-se gi-de-ce-gim", "Ee-se gee-de-jem"],
+          "correction_hint": "‘ğ’ is silent, it elongates the vowel. Say: ee-SHE gee-de-JE-eem.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 34,
+          "speaker": "user",
+          "expected_response": "İşe gideceğim",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 35,
+          "speaker": "app",
+          "turkish": "Kolay gelsin! İşin zor mu?",
+          "slow_phonetic": "Ko-lay gel-seen! ee-sheen zor moo?",
+          "english": "May it be easy! Is your job difficult?",
+          "user_prompt": "Say: A little bit difficult.",
+          "expected_response": "Biraz zor",
+          "mispronunciations": ["Bi-raz zor"],
+          "correction_hint": "Stress the second syllable. Say: bee-RAZ zor.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 36,
+          "speaker": "user",
+          "expected_response": "Biraz zor",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 37,
+          "speaker": "app",
+          "turkish": "Anlıyorum ama sen iyi bir mühendissin. Başarılar dilerim!",
+          "slow_phonetic": "An-lu-yo-room a-ma sen ee-yee beer mu-hen-dees-seen. Ba-sha-ru-lar dee-le-reem!",
+          "english": "I understand but you are a good engineer. I wish you success!",
+          "user_prompt": "Say: Thank you very much.",
+          "expected_response": "Çok teşekkür ederim",
+          "mispronunciations": ["Te-se-kur", "Te-she-kool-ler"],
+          "correction_hint": "The 'ü' is like 'u' in 'pure'. Say: te-SHEK-kur e-de-REEM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 38,
+          "speaker": "user",
+          "expected_response": "Çok teşekkür ederim",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 39,
+          "speaker": "app",
+          "turkish": "Rica ederim. Boş zamanlarında ne yaparsın?",
+          "slow_phonetic": "Ree-ja e-de-reem. Bosh za-man-la-run-da ne ya-par-sun?",
+          "english": "You're welcome. What do you do in your free time?",
+          "user_prompt": "Say: I read books.",
+          "expected_response": "Kitap okuyorum",
+          "mispronunciations": ["Ki-tap o-ku-yo-rum"],
+          "correction_hint": "Say it smoothly: kee-TAP o-koo-YO-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 40,
+          "speaker": "user",
+          "expected_response": "Kitap okuyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 41,
+          "speaker": "app",
+          "turkish": "Kitap okumak güzeldir. Hangi dilde okuyorsun?",
+          "slow_phonetic": "Kee-tap o-koo-mak gu-zel-deer. Han-gee deel-de o-koo-yor-soon?",
+          "english": "Reading books is nice. In which language do you read?",
+          "user_prompt": "Say: I read in English.",
+          "expected_response": "İngilizce okuyorum",
+          "mispronunciations": ["In-gi-liz-ce"],
+          "correction_hint": "'c' is 'j'. Say: een-gee-LEEZ-je.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 42,
+          "speaker": "user",
+          "expected_response": "İngilizce okuyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 43,
+          "speaker": "app",
+          "turkish": "Harika. Türkçe de okuyacak mısın?",
+          "slow_phonetic": "Ha-ree-ka. Toork-che de o-koo-ya-jak mu-soon?",
+          "english": "Wonderful. Will you read in Turkish too?",
+          "user_prompt": "Say: Yes, soon.",
+          "expected_response": "Evet, yakında",
+          "mispronunciations": ["Ya-kin-da"],
+          "correction_hint": "'ı' is a neutral vowel. Say: ya-KUN-da.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 44,
+          "speaker": "user",
+          "expected_response": "Evet, yakında",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 45,
+          "speaker": "app",
+          "turkish": "Çok iyi. Türkçe zor mu sence?",
+          "slow_phonetic": "Chok ee-yee. Toork-che zor moo sen-je?",
+          "english": "Very good. Is Turkish difficult in your opinion?",
+          "user_prompt": "Say: It is a bit difficult but fun.",
+          "expected_response": "Biraz zor ama eğlenceli",
+          "mispronunciations": ["E-len-ce-li", "E-glan-ce-li"],
+          "correction_hint": "'ğ' is silent. Say: ey-len-JE-lee.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 46,
+          "speaker": "user",
+          "expected_response": "Biraz zor ama eğlenceli",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 47,
+          "speaker": "app",
+          "turkish": "Katılıyorum! Zamanla öğreneceksin. Şimdi gitmem lazım.",
+          "slow_phonetic": "Ka-tu-lu-yo-room! Za-man-la uy-re-ne-jek-seen. Sheem-dee geet-mem la-zum.",
+          "english": "I agree! You will learn over time. Now I must go.",
+          "user_prompt": "Say: Okay, see you later.",
+          "expected_response": "Tamam, sonra görüşürüz",
+          "mispronunciations": ["Go-ru-su-ruz"],
+          "correction_hint": "'ş' is 'sh'. Say: gu-ru-SHU-ruz.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 48,
+          "speaker": "user",
+          "expected_response": "Tamam, sonra görüşürüz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 49,
+          "speaker": "app",
+          "turkish": "Görüşürüz! Kendine iyi bak.",
+          "slow_phonetic": "Gu-ru-shoo-rooz! Ken-dee-ne ee-yee bak.",
+          "english": "See you! Take care of yourself.",
+          "user_prompt": "Say: You too, goodbye.",
+          "expected_response": "Sen de, hoşça kal",
+          "mispronunciations": ["Hos-ca kal"],
+          "correction_hint": "‘ş’ is ‘sh’. Say: HOSH-cha kal.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 50,
+          "speaker": "user",
+          "expected_response": "Sen de, hoşça kal",
+          "min_score": 0.75
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "total_minutes": 10,
+      "new_minutes": 5,
+      "lines": [
+        {
+          "line_number": 1,
+          "speaker": "app",
+          "turkish": "Merhaba!",
+          "slow_phonetic": "Mer-ha-ba",
+          "english": "Hello!",
+          "user_prompt": "Say hello to start the conversation.",
+          "expected_response": "Merhaba",
+          "mispronunciations": ["Mer-hab", "Mar-haba"],
+          "correction_hint": "Keep the vowels even: MER-ha-ba.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 2,
+          "speaker": "user",
+          "expected_response": "Merhaba",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 3,
+          "speaker": "app",
+          "turkish": "Selam! Nasılsın?",
+          "slow_phonetic": "Se-lam! Na-sıl-sın?",
+          "english": "Hi! How are you?",
+          "user_prompt": "Say: I am fine.",
+          "expected_response": "İyiyim",
+          "mispronunciations": ["Ee-yim", "I-yi-yim"],
+          "correction_hint": "The 'İ' is like 'ee' in 'see'. Say: EE-yee-yeem.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 4,
+          "speaker": "user",
+          "expected_response": "İyiyim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 5,
+          "speaker": "app",
+          "turkish": "Ben de iyiyim, teşekkürler. Adın ne?",
+          "slow_phonetic": "Ben de ee-yee-yeem, te-shek-kur-ler. A-dın ne?",
+          "english": "I'm fine too, thanks. What is your name?",
+          "user_prompt": "Say: My name is Matthew.",
+          "expected_response": "Adım Matthew",
+          "mispronunciations": ["A-dam Matthew", "Adin Matthew"],
+          "correction_hint": "Ending with 'm' means 'my'. Say: A-DUM.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 6,
+          "speaker": "user",
+          "expected_response": "Adım Matthew",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 7,
+          "speaker": "app",
+          "turkish": "Memnun oldum Matthew.",
+          "slow_phonetic": "Mem-noon ol-doom Matthew.",
+          "english": "Nice to meet you, Matthew.",
+          "user_prompt": "Say: Me too (Nice to meet you too).",
+          "expected_response": "Ben de memnun oldum",
+          "mispronunciations": ["Ben de mem-nun ol-dum", "Ben da mem-noon"],
+          "correction_hint": "Vowels are deep. Say: Mem-NOON ol-DOOM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 8,
+          "speaker": "user",
+          "expected_response": "Ben de memnun oldum",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 9,
+          "speaker": "app",
+          "turkish": "Nerelisin?",
+          "slow_phonetic": "Ne-re-lee-seen?",
+          "english": "Where are you from?",
+          "user_prompt": "Say: I am from Nigeria.",
+          "expected_response": "Nijeryalıyım",
+          "mispronunciations": ["Ni-jer-ya-li-yim", "Ni-ger-ya-li-yum"],
+          "correction_hint": "The 'j' is soft like 'measure'. Say: Nee-zher-ya-LU-yum.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 10,
+          "speaker": "user",
+          "expected_response": "Nijeryalıyım",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 11,
+          "speaker": "app",
+          "turkish": "Öyle mi? Çok güzel. Ben Türkiyeliyim. Nerede yaşıyorsun?",
+          "slow_phonetic": "Uy-le mee? Chok gu-zel. Ben Tur-kee-ye-lee-yeem. Ne-re-de ya-shu-yor-soon?",
+          "english": "Is that so? Very beautiful. I am from Turkey. Where do you live?",
+          "user_prompt": "Say: I live in Nicosia.",
+          "expected_response": "Lefkoşa'da yaşıyorum",
+          "mispronunciations": ["Lef-ko-sa-da", "Ya-si-yo-rum"],
+          "correction_hint": "‘ş’ is ‘sh’. Say: Lef-KO-sha-da ya-shu-YO-room.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 12,
+          "speaker": "user",
+          "expected_response": "Lefkoşa'da yaşıyorum",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 13,
+          "speaker": "app",
+          "turkish": "Anladım. Ne iş yapıyorsun?",
+          "slow_phonetic": "An-la-dum. Ne eesh ya-pu-yor-soon?",
+          "english": "I see. What is your job?",
+          "user_prompt": "Say: I am an engineer.",
+          "expected_response": "Mühendisim",
+          "mispronunciations": ["Mu-hen-di-sim", "Moo-hen-dees-eem"],
+          "correction_hint": "Round your lips for 'ü'. Say: Mu-hen-dee-SEEM.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 14,
+          "speaker": "user",
+          "expected_response": "Mühendisim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 15,
+          "speaker": "app",
+          "turkish": "Harika bir meslek! Yazılım mühendisi misin?",
+          "slow_phonetic": "Ha-ree-ka beer mes-lek! Ya-zu-lum mu-hen-dee-see mee-seen?",
+          "english": "A great profession! Are you a software engineer?",
+          "user_prompt": "Say: Yes, I am a software engineer.",
+          "expected_response": "Evet, yazılım mühendisiyim",
+          "mispronunciations": ["E-wet", "Ya-zi-lim"],
+          "correction_hint": "'v' is like English 'v'. 'ı' is a closed 'uh' sound. Say: E-VET, ya-zu-LUM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 16,
+          "speaker": "user",
+          "expected_response": "Evet, yazılım mühendisiyim",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 17,
+          "speaker": "app",
+          "turkish": "Çok ilginç. Kaç yaşındasın?",
+          "slow_phonetic": "Chok eel-geench. Kach ya-shun-da-sun?",
+          "english": "Very interesting. How old are you?",
+          "user_prompt": "Say: I am twenty-five years old.",
+          "expected_response": "Yirmi beş yaşındayım",
+          "mispronunciations": ["Yir-mi bes", "Ya-sin-da-yim"],
+          "correction_hint": "Beş (5) has a 'sh' sound. Say: Yeer-mee BESH.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 18,
+          "speaker": "user",
+          "expected_response": "Yirmi beş yaşındayım",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 19,
+          "speaker": "app",
+          "turkish": "Gençsin! Ben otuz yaşındayım. Evli misin?",
+          "slow_phonetic": "Gench-seen! Ben o-tooz ya-shun-da-yum. Ev-lee mee-seen?",
+          "english": "You are young! I am thirty years old. Are you married?",
+          "user_prompt": "Say: No, I am single.",
+          "expected_response": "Hayır, bekarım",
+          "mispronunciations": ["Ha-yir", "Be-ka-rim"],
+          "correction_hint": "Hayır starts with a crisp 'H'. Say: HA-yur, be-KA-rum.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 20,
+          "speaker": "user",
+          "expected_response": "Hayır, bekarım",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 21,
+          "speaker": "app",
+          "turkish": "Anladım. Kardeşin var mı?",
+          "slow_phonetic": "An-la-dum. Kar-de-sheen var mu?",
+          "english": "Understood. Do you have siblings?",
+          "user_prompt": "Say: Yes, I have two brothers.",
+          "expected_response": "Evet, iki erkek kardeşim var",
+          "mispronunciations": ["E-wet", "Er-kek kar-de-sim"],
+          "correction_hint": "'ş' is 'sh'. Say: ee-KEE er-KEK kar-de-SHEEM.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 22,
+          "speaker": "user",
+          "expected_response": "Evet, iki erkek kardeşim var",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 23,
+          "speaker": "app",
+          "turkish": "Ne güzel! Onlar nerede?",
+          "slow_phonetic": "Ne gu-zel! On-lar ne-re-de?",
+          "english": "How nice! Where are they?",
+          "user_prompt": "Say: They are in Nigeria.",
+          "expected_response": "Onlar Nijerya'da",
+          "mispronunciations": ["On-lar Ni-ger-ya-da"],
+          "correction_hint": "Remember the soft 'j'. Say: Nee-ZHER-ya-da.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 24,
+          "speaker": "user",
+          "expected_response": "Onlar Nijerya'da",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 25,
+          "speaker": "app",
+          "turkish": "Anlıyorum. Türkiye'yi seviyor musun?",
+          "slow_phonetic": "An-lu-yo-room. Tur-kee-ye-yee se-vee-yor moo-soon?",
+          "english": "I understand. Do you like Turkey?",
+          "user_prompt": "Say: Yes, I like it very much.",
+          "expected_response": "Evet, çok seviyorum",
+          "mispronunciations": ["Chok se-vi-yo-rum"],
+          "correction_hint": "Vowels are long. Say: se-VEE-yo-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 26,
+          "speaker": "user",
+          "expected_response": "Evet, çok seviyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 27,
+          "speaker": "app",
+          "turkish": "Bu harika! Türk yemeklerini denedin mi?",
+          "slow_phonetic": "Boo ha-ree-ka! Toork ye-mek-le-ree-nee de-ne-deen mee?",
+          "english": "This is great! Have you tried Turkish food?",
+          "user_prompt": "Say: Yes, I tried Kebab.",
+          "expected_response": "Evet, kebap denedim",
+          "mispronunciations": ["Ke-bab", "De-ne-dim"],
+          "correction_hint": "Turkish ends with 'p' in 'kebap'. Say: ke-BAP.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 28,
+          "speaker": "user",
+          "expected_response": "Evet, kebap denedim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 29,
+          "speaker": "app",
+          "turkish": "Afiyet olsun! Kebap çok lezzetlidir. Başka ne seversin?",
+          "slow_phonetic": "A-fee-yet ol-soon! Ke-bap chok lez-zet-lee-deer. Bash-ka ne se-ver-seen?",
+          "english": "Enjoy your meal! Kebab is very delicious. What else do you like?",
+          "user_prompt": "Say: I like tea.",
+          "expected_response": "Çay seviyorum",
+          "mispronunciations": ["Cay", "Chai"],
+          "correction_hint": "'Ç' is 'ch'. Say: CHAY.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 30,
+          "speaker": "user",
+          "expected_response": "Çay seviyorum",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 31,
+          "speaker": "app",
+          "turkish": "Türk çayı harikadır. Şekerli mi içersin?",
+          "slow_phonetic": "Toork cha-yu ha-ree-ka-dur. She-ker-lee mee ee-cher-seen?",
+          "english": "Turkish tea is wonderful. Do you drink it with sugar?",
+          "user_prompt": "Say: No, without sugar.",
+          "expected_response": "Hayır, şekersiz",
+          "mispronunciations": ["Se-ker-siz"],
+          "correction_hint": "Şeker (sugar) starts with 'sh'. Say: she-ker-SEEZ.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 32,
+          "speaker": "user",
+          "expected_response": "Hayır, şekersiz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 33,
+          "speaker": "app",
+          "turkish": "Doğru seçim, daha sağlıklı. Bugün ne yapacaksın?",
+          "slow_phonetic": "Do-roo se-cheem, da-ha sa-luk-lu. Boo-goon ne ya-pa-jak-sun?",
+          "english": "Right choice, healthier. What will you do today?",
+          "user_prompt": "Say: I will go to work.",
+          "expected_response": "İşe gideceğim",
+          "mispronunciations": ["I-se gi-de-ce-gim", "Ee-se gee-de-jem"],
+          "correction_hint": "‘ğ’ is silent, it elongates the vowel. Say: ee-SHE gee-de-JE-eem.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 34,
+          "speaker": "user",
+          "expected_response": "İşe gideceğim",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 35,
+          "speaker": "app",
+          "turkish": "Kolay gelsin! İşin zor mu?",
+          "slow_phonetic": "Ko-lay gel-seen! ee-sheen zor moo?",
+          "english": "May it be easy! Is your job difficult?",
+          "user_prompt": "Say: A little bit difficult.",
+          "expected_response": "Biraz zor",
+          "mispronunciations": ["Bi-raz zor"],
+          "correction_hint": "Stress the second syllable. Say: bee-RAZ zor.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 36,
+          "speaker": "user",
+          "expected_response": "Biraz zor",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 37,
+          "speaker": "app",
+          "turkish": "Anlıyorum ama sen iyi bir mühendissin. Başarılar dilerim!",
+          "slow_phonetic": "An-lu-yo-room a-ma sen ee-yee beer mu-hen-dees-seen. Ba-sha-ru-lar dee-le-reem!",
+          "english": "I understand but you are a good engineer. I wish you success!",
+          "user_prompt": "Say: Thank you very much.",
+          "expected_response": "Çok teşekkür ederim",
+          "mispronunciations": ["Te-se-kur", "Te-she-kool-ler"],
+          "correction_hint": "The 'ü' is like 'u' in 'pure'. Say: te-SHEK-kur e-de-REEM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 38,
+          "speaker": "user",
+          "expected_response": "Çok teşekkür ederim",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 39,
+          "speaker": "app",
+          "turkish": "Rica ederim. Boş zamanlarında ne yaparsın?",
+          "slow_phonetic": "Ree-ja e-de-reem. Bosh za-man-la-run-da ne ya-par-sun?",
+          "english": "You're welcome. What do you do in your free time?",
+          "user_prompt": "Say: I read books.",
+          "expected_response": "Kitap okuyorum",
+          "mispronunciations": ["Ki-tap o-ku-yo-rum"],
+          "correction_hint": "Say it smoothly: kee-TAP o-koo-YO-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 40,
+          "speaker": "user",
+          "expected_response": "Kitap okuyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 41,
+          "speaker": "app",
+          "turkish": "Kitap okumak güzeldir. Hangi dilde okuyorsun?",
+          "slow_phonetic": "Kee-tap o-koo-mak gu-zel-deer. Han-gee deel-de o-koo-yor-soon?",
+          "english": "Reading books is nice. In which language do you read?",
+          "user_prompt": "Say: I read in English.",
+          "expected_response": "İngilizce okuyorum",
+          "mispronunciations": ["In-gi-liz-ce"],
+          "correction_hint": "'c' is 'j'. Say: een-gee-LEEZ-je.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 42,
+          "speaker": "user",
+          "expected_response": "İngilizce okuyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 43,
+          "speaker": "app",
+          "turkish": "Harika. Türkçe de okuyacak mısın?",
+          "slow_phonetic": "Ha-ree-ka. Toork-che de o-koo-ya-jak mu-soon?",
+          "english": "Wonderful. Will you read in Turkish too?",
+          "user_prompt": "Say: Yes, soon.",
+          "expected_response": "Evet, yakında",
+          "mispronunciations": ["Ya-kin-da"],
+          "correction_hint": "'ı' is a neutral vowel. Say: ya-KUN-da.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 44,
+          "speaker": "user",
+          "expected_response": "Evet, yakında",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 45,
+          "speaker": "app",
+          "turkish": "Çok iyi. Türkçe zor mu sence?",
+          "slow_phonetic": "Chok ee-yee. Toork-che zor moo sen-je?",
+          "english": "Very good. Is Turkish difficult in your opinion?",
+          "user_prompt": "Say: It is a bit difficult but fun.",
+          "expected_response": "Biraz zor ama eğlenceli",
+          "mispronunciations": ["E-len-ce-li", "E-glan-ce-li"],
+          "correction_hint": "'ğ' is silent. Say: ey-len-JE-lee.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 46,
+          "speaker": "user",
+          "expected_response": "Biraz zor ama eğlenceli",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 47,
+          "speaker": "app",
+          "turkish": "Katılıyorum! Zamanla öğreneceksin. Şimdi gitmem lazım.",
+          "slow_phonetic": "Ka-tu-lu-yo-room! Za-man-la uy-re-ne-jek-seen. Sheem-dee geet-mem la-zum.",
+          "english": "I agree! You will learn over time. Now I must go.",
+          "user_prompt": "Say: Okay, see you later.",
+          "expected_response": "Tamam, sonra görüşürüz",
+          "mispronunciations": ["Go-ru-su-ruz"],
+          "correction_hint": "'ş' is 'sh'. Say: gu-ru-SHU-ruz.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 48,
+          "speaker": "user",
+          "expected_response": "Tamam, sonra görüşürüz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 49,
+          "speaker": "app",
+          "turkish": "Görüşürüz! Kendine iyi bak.",
+          "slow_phonetic": "Gu-ru-shoo-rooz! Ken-dee-ne ee-yee bak.",
+          "english": "See you! Take care of yourself.",
+          "user_prompt": "Say: You too, goodbye.",
+          "expected_response": "Sen de, hoşça kal",
+          "mispronunciations": ["Hos-ca kal"],
+          "correction_hint": "‘ş’ is ‘sh’. Say: HOSH-cha kal.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 50,
+          "speaker": "user",
+          "expected_response": "Sen de, hoşça kal",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 51,
+          "speaker": "app",
+          "turkish": "Merhaba tekrar! Bugün nasılsın?",
+          "slow_phonetic": "Mer-ha-ba tek-rar! Boo-goon na-sıl-sın?",
+          "english": "Hello again! How are you today?",
+          "user_prompt": "Say: I am very well, thanks.",
+          "expected_response": "Çok iyiyim, teşekkürler",
+          "mispronunciations": ["Cok i-yi-yim", "Chok eey-yim"],
+          "correction_hint": "Say 'çok' with a 'ch' sound. EE-yee-yeem.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 52,
+          "speaker": "user",
+          "expected_response": "Çok iyiyim, teşekkürler",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 53,
+          "speaker": "app",
+          "turkish": "Bir plan yapalım. Bugün günlerden ne?",
+          "slow_phonetic": "Beer plan ya-pa-lım. Boo-goon goon-ler-den ne?",
+          "english": "Let's make a plan. What day is it today?",
+          "user_prompt": "Say: Today is Monday.",
+          "expected_response": "Bugün Pazartesi",
+          "mispronunciations": ["Bu-gun Pa-zar-te-si"],
+          "correction_hint": "'ü' needs rounded lips. Boo-GOON Pa-ZAR-te-see.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 54,
+          "speaker": "user",
+          "expected_response": "Bugün Pazartesi",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 55,
+          "speaker": "app",
+          "turkish": "Tamam. Çarşamba günü boş musun?",
+          "slow_phonetic": "Ta-mam. Char-sham-ba goo-noo bosh moo-soon?",
+          "english": "Okay. Are you free on Wednesday?",
+          "user_prompt": "Say: Yes, I am free on Wednesday.",
+          "expected_response": "Evet, Çarşamba günü boşum",
+          "mispronunciations": ["Car-sam-ba", "Bo-sum"],
+          "correction_hint": "Lots of 'sh' and 'ch' sounds. Char-SHAM-ba goo-noo bo-SHOOM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 56,
+          "speaker": "user",
+          "expected_response": "Evet, Çarşamba günü boşum",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 57,
+          "speaker": "app",
+          "turkish": "Bir kafede buluşalım. Kahve ister misin?",
+          "slow_phonetic": "Beer ka-fe-de boo-loo-sha-lım. Kah-ve ees-ter mee-seen?",
+          "english": "Let's meet at a cafe. Do you want coffee?",
+          "user_prompt": "Say: Yes, I like coffee.",
+          "expected_response": "Evet, kahve severim",
+          "mispronunciations": ["E-wet", "Kah-we"],
+          "correction_hint": "Use a clear English 'v', not 'w'. Kah-VE.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 58,
+          "speaker": "user",
+          "expected_response": "Evet, kahve severim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 59,
+          "speaker": "app",
+          "turkish": "Saat kaçta buluşalım?",
+          "slow_phonetic": "Sa-at kach-ta boo-loo-sha-lım?",
+          "english": "What time shall we meet?",
+          "user_prompt": "Say: Let's meet at two o'clock.",
+          "expected_response": "Saat ikide buluşalım",
+          "mispronunciations": ["Sat i-ki-de", "Bu-lu-sa-lim"],
+          "correction_hint": "Double 'a' in saat means hold it slightly longer. Sa-AT ee-kee-DE.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 60,
+          "speaker": "user",
+          "expected_response": "Saat ikide buluşalım",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 61,
+          "speaker": "app",
+          "turkish": "Saat iki çok mu erken? Üç nasıl?",
+          "slow_phonetic": "Sa-at ee-kee chok moo er-ken? Ooch na-sıl?",
+          "english": "Is two o'clock too early? What about three?",
+          "user_prompt": "Say: Okay, three o'clock is good.",
+          "expected_response": "Tamam, saat üç uygun",
+          "mispronunciations": ["Uc uy-gun", "Ooc uy-gun"],
+          "correction_hint": "Tightly rounded lips for 'üç'. OOCH ooy-GOON.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 62,
+          "speaker": "user",
+          "expected_response": "Tamam, saat üç uygun",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 63,
+          "speaker": "app",
+          "turkish": "Harika. Kaç kişiyiz?",
+          "slow_phonetic": "Ha-ree-ka. Kach kee-shee-yeez?",
+          "english": "Perfect. How many people are we?",
+          "user_prompt": "Say: We are two people.",
+          "expected_response": "Biz iki kişiyiz",
+          "mispronunciations": ["Biz i-ki ki-si-yiz"],
+          "correction_hint": "Pronounce 'ş' as 'sh'. Beez ee-KEE kee-shee-YEEZ.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 64,
+          "speaker": "user",
+          "expected_response": "Biz iki kişiyiz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 65,
+          "speaker": "app",
+          "turkish": "Ona kadar sayabilir misin?",
+          "slow_phonetic": "O-na ka-dar sa-ya-bee-leer mee-seen?",
+          "english": "Can you count to ten?",
+          "user_prompt": "Say: One, two, three, four...",
+          "expected_response": "Bir, iki, üç, dört",
+          "mispronunciations": ["Dort (like english door)"],
+          "correction_hint": "For 'ö' round your lips and say 'e'. DÖRT.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 66,
+          "speaker": "user",
+          "expected_response": "Bir, iki, üç, dört",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 67,
+          "speaker": "app",
+          "turkish": "Çok iyi! Peki ya devamı?",
+          "slow_phonetic": "Chok ee-yee! Pe-kee ya de-va-mı?",
+          "english": "Very good! And the rest?",
+          "user_prompt": "Say: Five, six, seven, eight...",
+          "expected_response": "Beş, altı, yedi, sekiz",
+          "mispronunciations": ["Bes", "Al-ti"],
+          "correction_hint": "Keep 'ş' as 'sh' and 'ı' as neutral 'uh'. BESH, al-TUH, ye-DEE, se-KEEZ.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 68,
+          "speaker": "user",
+          "expected_response": "Beş, altı, yedi, sekiz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 69,
+          "speaker": "app",
+          "turkish": "Ve son iki sayı?",
+          "slow_phonetic": "Ve son ee-kee sa-yı?",
+          "english": "And the last two numbers?",
+          "user_prompt": "Say: Nine, ten.",
+          "expected_response": "Dokuz, on",
+          "mispronunciations": ["Do-kuz (english u)"],
+          "correction_hint": "Use a deep 'oo' sound for 'u'. Do-KOOZ, on.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 70,
+          "speaker": "user",
+          "expected_response": "Dokuz, on",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 71,
+          "speaker": "app",
+          "turkish": "Mükemmel! Daha fazla sayı çalışalım.",
+          "slow_phonetic": "Moo-kem-mel! Da-ha faz-la sa-yı cha-lı-sha-lım.",
+          "english": "Excellent! Let's practice more numbers.",
+          "user_prompt": "Say: Okay, let's practice.",
+          "expected_response": "Tamam, çalışalım",
+          "mispronunciations": ["Ca-li-sa-lim"],
+          "correction_hint": "Use 'ch' and 'sh' sounds. cha-lı-SHA-lım.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 72,
+          "speaker": "user",
+          "expected_response": "Tamam, çalışalım",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 73,
+          "speaker": "app",
+          "turkish": "Ondan sonra ne gelir?",
+          "slow_phonetic": "On-dan son-ra ne ge-leer?",
+          "english": "What is after ten?",
+          "user_prompt": "Say: Eleven, twelve.",
+          "expected_response": "On bir, on iki",
+          "mispronunciations": ["On beer, on i-ki"],
+          "correction_hint": "Clearly separate the words. On BEER, on ee-KEE.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 74,
+          "speaker": "user",
+          "expected_response": "On bir, on iki",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 75,
+          "speaker": "app",
+          "turkish": "Evet. Sonra on üç, on dört, on beş.",
+          "slow_phonetic": "E-vet. Son-ra on ooch, on dort, on besh.",
+          "english": "Yes. Then thirteen, fourteen, fifteen.",
+          "user_prompt": "Say: Sixteen, seventeen.",
+          "expected_response": "On altı, on yedi",
+          "mispronunciations": ["On al-ti, on ye-di"],
+          "correction_hint": "Watch the 'ı' in altı. On al-TUH, on ye-DEE.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 76,
+          "speaker": "user",
+          "expected_response": "On altı, on yedi",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 77,
+          "speaker": "app",
+          "turkish": "Ve son olarak on sekiz, on dokuz, yirmi.",
+          "slow_phonetic": "Ve son o-la-rak on se-keez, on do-kooz, yeer-mee.",
+          "english": "And finally eighteen, nineteen, twenty.",
+          "user_prompt": "Say: I counted to twenty.",
+          "expected_response": "Yirmiye kadar saydım",
+          "mispronunciations": ["Yir-mi-ye ka-dar say-dim"],
+          "correction_hint": "Make sure 'saydım' uses the neutral 'ı'. Say-DUM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 78,
+          "speaker": "user",
+          "expected_response": "Yirmiye kadar saydım",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 79,
+          "speaker": "app",
+          "turkish": "Harika iş! Haftanın günlerini hatırlıyor musun?",
+          "slow_phonetic": "Ha-ree-ka eesh! Haf-ta-nın goon-le-ree-nee ha-tır-lı-yor moo-soon?",
+          "english": "Great job! Do you remember the days of the week?",
+          "user_prompt": "Say: Monday, Tuesday, Wednesday.",
+          "expected_response": "Pazartesi, Salı, Çarşamba",
+          "mispronunciations": ["Pa-zar-te-si, Sa-li, Car-sam-ba"],
+          "correction_hint": "'Salı' ends with the neutral 'ı'. Sa-LUH.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 80,
+          "speaker": "user",
+          "expected_response": "Pazartesi, Salı, Çarşamba",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 81,
+          "speaker": "app",
+          "turkish": "Çarşambadan sonra ne gelir?",
+          "slow_phonetic": "Char-sham-ba-dan son-ra ne ge-leer?",
+          "english": "What comes after Wednesday?",
+          "user_prompt": "Say: Thursday and Friday.",
+          "expected_response": "Perşembe ve Cuma",
+          "mispronunciations": ["Per-sem-be", "Cu-ma"],
+          "correction_hint": "'C' sounds like 'j' in jump. Joo-MA.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 82,
+          "speaker": "user",
+          "expected_response": "Perşembe ve Cuma",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 83,
+          "speaker": "app",
+          "turkish": "Peki hafta sonu?",
+          "slow_phonetic": "Pe-kee haf-ta so-noo?",
+          "english": "And the weekend?",
+          "user_prompt": "Say: Saturday and Sunday.",
+          "expected_response": "Cumartesi ve Pazar",
+          "mispronunciations": ["Cu-mar-te-si"],
+          "correction_hint": "Remember the 'j' sound again. Joo-MAR-te-see.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 84,
+          "speaker": "user",
+          "expected_response": "Cumartesi ve Pazar",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 85,
+          "speaker": "app",
+          "turkish": "Tebrikler. Buluşmamız Çarşamba günü.",
+          "slow_phonetic": "Teb-reek-ler. Boo-loosh-ma-mız Char-sham-ba goo-noo.",
+          "english": "Well done. Our meeting is on Wednesday.",
+          "user_prompt": "Say: Yes, at the cafe.",
+          "expected_response": "Evet, kafede",
+          "mispronunciations": ["E-wet ka-fe-de"],
+          "correction_hint": "Crisp 'v' sound. E-vet, ka-fe-DE.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 86,
+          "speaker": "user",
+          "expected_response": "Evet, kafede",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 87,
+          "speaker": "app",
+          "turkish": "Hangi kafeyi tercih edersin?",
+          "slow_phonetic": "Han-gee ka-fe-yee ter-jeeh e-der-seen?",
+          "english": "Which cafe do you prefer?",
+          "user_prompt": "Say: The cafe in the center.",
+          "expected_response": "Merkezdeki kafeyi",
+          "mispronunciations": ["Mer-kez-de-ki ka-fe-yi"],
+          "correction_hint": "Stress the ending smoothly. Mer-kez-de-KEE ka-fe-YEE.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 88,
+          "speaker": "user",
+          "expected_response": "Merkezdeki kafeyi",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 89,
+          "speaker": "app",
+          "turkish": "Orasını biliyorum. Saat sekizde açılıyor.",
+          "slow_phonetic": "O-ra-sı-nı bee-lee-yo-room. Sa-at se-keez-de a-çı-lı-yor.",
+          "english": "I know that place. It opens at eight.",
+          "user_prompt": "Say: Good, see you at three.",
+          "expected_response": "Güzel, saat üçte görüşürüz",
+          "mispronunciations": ["Gu-zel", "Go-ru-su-ruz"],
+          "correction_hint": "Round lips for 'ü' and 'ö'. Gu-ZEL, sa-AT ooch-TE gu-ru-SHU-ruz.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 90,
+          "speaker": "user",
+          "expected_response": "Güzel, saat üçte görüşürüz",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 91,
+          "speaker": "app",
+          "turkish": "Dur, ondan önce marketten bir şeye ihtiyacın var mı?",
+          "slow_phonetic": "Door, on-dan on-je mar-ket-ten beer she-ye eeh-tee-ya-jın var mı?",
+          "english": "Wait, do you need anything from the market before that?",
+          "user_prompt": "Say: No, thank you.",
+          "expected_response": "Hayır, teşekkür ederim",
+          "mispronunciations": ["Ha-yir", "Te-se-kur"],
+          "correction_hint": "Crisp 'h' on Hayır, and 'sh' for teşekkür. HA-yur, te-shek-KUR e-de-REEM.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 92,
+          "speaker": "user",
+          "expected_response": "Hayır, teşekkür ederim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 93,
+          "speaker": "app",
+          "turkish": "Peki, Çarşamba gününe kadar ne yapacaksın?",
+          "slow_phonetic": "Pe-kee, Char-sham-ba goo-noo-ne ka-dar ne ya-pa-jak-sın?",
+          "english": "Alright, what will you do until Wednesday?",
+          "user_prompt": "Say: I will work and rest.",
+          "expected_response": "Çalışacağım ve dinleneceğim",
+          "mispronunciations": ["Ca-li-sa-ca-gim", "Din-le-ne-ce-gim"],
+          "correction_hint": "The 'ğ' is silent and just elongates the vowel. Cha-lı-sha-JA-um ve deen-le-ne-JE-eem.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 94,
+          "speaker": "user",
+          "expected_response": "Çalışacağım ve dinleneceğim",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 95,
+          "speaker": "app",
+          "turkish": "Dinlenmek önemli. Erken uyur musun?",
+          "slow_phonetic": "Deen-len-mek o-nem-lee. Er-ken oo-yoor moo-soon?",
+          "english": "Resting is important. Do you sleep early?",
+          "user_prompt": "Say: I sleep at eleven.",
+          "expected_response": "Saat on birde uyurum",
+          "mispronunciations": ["Sat on bir-de u-yu-rum"],
+          "correction_hint": "Stress 'birde' and smoothly say 'uyurum'. Sa-AT on beer-DE oo-YOO-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 96,
+          "speaker": "user",
+          "expected_response": "Saat on birde uyurum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 97,
+          "speaker": "app",
+          "turkish": "Bu iyi bir saat.",
+          "slow_phonetic": "Boo ee-yee beer sa-at.",
+          "english": "That is a good time.",
+          "user_prompt": "Say: Yes, I agree.",
+          "expected_response": "Evet, katılıyorum",
+          "mispronunciations": ["Ka-ti-li-yo-rum"],
+          "correction_hint": "Use the neutral 'ı' correctly. Ka-tuh-LUH-yo-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 98,
+          "speaker": "user",
+          "expected_response": "Evet, katılıyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 99,
+          "speaker": "app",
+          "turkish": "Şimdi gitmem lazım. İyi günler!",
+          "slow_phonetic": "Sheem-dee geet-mem la-zım. ee-yee goon-ler!",
+          "english": "I have to go now. Have a nice day!",
+          "user_prompt": "Say: Have a nice day!",
+          "expected_response": "İyi günler!",
+          "mispronunciations": ["I-yi gun-ler"],
+          "correction_hint": "Round lips for 'ü'. EE-yee goon-LER!",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 100,
+          "speaker": "user",
+          "expected_response": "İyi günler!",
+          "min_score": 0.8
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "total_minutes": 15,
+      "new_minutes": 5,
+      "lines": [
+        {
+          "line_number": 1,
+          "speaker": "app",
+          "turkish": "Merhaba!",
+          "slow_phonetic": "Mer-ha-ba",
+          "english": "Hello!",
+          "user_prompt": "Say hello to start the conversation.",
+          "expected_response": "Merhaba",
+          "mispronunciations": ["Mer-hab", "Mar-haba"],
+          "correction_hint": "Keep the vowels even: MER-ha-ba.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 2,
+          "speaker": "user",
+          "expected_response": "Merhaba",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 3,
+          "speaker": "app",
+          "turkish": "Selam! Nasılsın?",
+          "slow_phonetic": "Se-lam! Na-sıl-sın?",
+          "english": "Hi! How are you?",
+          "user_prompt": "Say: I am fine.",
+          "expected_response": "İyiyim",
+          "mispronunciations": ["Ee-yim", "I-yi-yim"],
+          "correction_hint": "The 'İ' is like 'ee' in 'see'. Say: EE-yee-yeem.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 4,
+          "speaker": "user",
+          "expected_response": "İyiyim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 5,
+          "speaker": "app",
+          "turkish": "Ben de iyiyim, teşekkürler. Adın ne?",
+          "slow_phonetic": "Ben de ee-yee-yeem, te-shek-kur-ler. A-dın ne?",
+          "english": "I'm fine too, thanks. What is your name?",
+          "user_prompt": "Say: My name is Matthew.",
+          "expected_response": "Adım Matthew",
+          "mispronunciations": ["A-dam Matthew", "Adin Matthew"],
+          "correction_hint": "Ending with 'm' means 'my'. Say: A-DUM.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 6,
+          "speaker": "user",
+          "expected_response": "Adım Matthew",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 7,
+          "speaker": "app",
+          "turkish": "Memnun oldum Matthew.",
+          "slow_phonetic": "Mem-noon ol-doom Matthew.",
+          "english": "Nice to meet you, Matthew.",
+          "user_prompt": "Say: Me too (Nice to meet you too).",
+          "expected_response": "Ben de memnun oldum",
+          "mispronunciations": ["Ben de mem-nun ol-dum", "Ben da mem-noon"],
+          "correction_hint": "Vowels are deep. Say: Mem-NOON ol-DOOM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 8,
+          "speaker": "user",
+          "expected_response": "Ben de memnun oldum",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 9,
+          "speaker": "app",
+          "turkish": "Nerelisin?",
+          "slow_phonetic": "Ne-re-lee-seen?",
+          "english": "Where are you from?",
+          "user_prompt": "Say: I am from Nigeria.",
+          "expected_response": "Nijeryalıyım",
+          "mispronunciations": ["Ni-jer-ya-li-yim", "Ni-ger-ya-li-yum"],
+          "correction_hint": "The 'j' is soft like 'measure'. Say: Nee-zher-ya-LU-yum.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 10,
+          "speaker": "user",
+          "expected_response": "Nijeryalıyım",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 11,
+          "speaker": "app",
+          "turkish": "Öyle mi? Çok güzel. Ben Türkiyeliyim. Nerede yaşıyorsun?",
+          "slow_phonetic": "Uy-le mee? Chok gu-zel. Ben Tur-kee-ye-lee-yeem. Ne-re-de ya-shu-yor-soon?",
+          "english": "Is that so? Very beautiful. I am from Turkey. Where do you live?",
+          "user_prompt": "Say: I live in Nicosia.",
+          "expected_response": "Lefkoşa'da yaşıyorum",
+          "mispronunciations": ["Lef-ko-sa-da", "Ya-si-yo-rum"],
+          "correction_hint": "‘ş’ is ‘sh’. Say: Lef-KO-sha-da ya-shu-YO-room.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 12,
+          "speaker": "user",
+          "expected_response": "Lefkoşa'da yaşıyorum",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 13,
+          "speaker": "app",
+          "turkish": "Anladım. Ne iş yapıyorsun?",
+          "slow_phonetic": "An-la-dum. Ne eesh ya-pu-yor-soon?",
+          "english": "I see. What is your job?",
+          "user_prompt": "Say: I am an engineer.",
+          "expected_response": "Mühendisim",
+          "mispronunciations": ["Mu-hen-di-sim", "Moo-hen-dees-eem"],
+          "correction_hint": "Round your lips for 'ü'. Say: Mu-hen-dee-SEEM.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 14,
+          "speaker": "user",
+          "expected_response": "Mühendisim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 15,
+          "speaker": "app",
+          "turkish": "Harika bir meslek! Yazılım mühendisi misin?",
+          "slow_phonetic": "Ha-ree-ka beer mes-lek! Ya-zu-lum mu-hen-dee-see mee-seen?",
+          "english": "A great profession! Are you a software engineer?",
+          "user_prompt": "Say: Yes, I am a software engineer.",
+          "expected_response": "Evet, yazılım mühendisiyim",
+          "mispronunciations": ["E-wet", "Ya-zi-lim"],
+          "correction_hint": "'v' is like English 'v'. 'ı' is a closed 'uh' sound. Say: E-VET, ya-zu-LUM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 16,
+          "speaker": "user",
+          "expected_response": "Evet, yazılım mühendisiyim",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 17,
+          "speaker": "app",
+          "turkish": "Çok ilginç. Kaç yaşındasın?",
+          "slow_phonetic": "Chok eel-geench. Kach ya-shun-da-sun?",
+          "english": "Very interesting. How old are you?",
+          "user_prompt": "Say: I am twenty-five years old.",
+          "expected_response": "Yirmi beş yaşındayım",
+          "mispronunciations": ["Yir-mi bes", "Ya-sin-da-yim"],
+          "correction_hint": "Beş (5) has a 'sh' sound. Say: Yeer-mee BESH.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 18,
+          "speaker": "user",
+          "expected_response": "Yirmi beş yaşındayım",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 19,
+          "speaker": "app",
+          "turkish": "Gençsin! Ben otuz yaşındayım. Evli misin?",
+          "slow_phonetic": "Gench-seen! Ben o-tooz ya-shun-da-yum. Ev-lee mee-seen?",
+          "english": "You are young! I am thirty years old. Are you married?",
+          "user_prompt": "Say: No, I am single.",
+          "expected_response": "Hayır, bekarım",
+          "mispronunciations": ["Ha-yir", "Be-ka-rim"],
+          "correction_hint": "Hayır starts with a crisp 'H'. Say: HA-yur, be-KA-rum.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 20,
+          "speaker": "user",
+          "expected_response": "Hayır, bekarım",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 21,
+          "speaker": "app",
+          "turkish": "Anladım. Kardeşin var mı?",
+          "slow_phonetic": "An-la-dum. Kar-de-sheen var mu?",
+          "english": "Understood. Do you have siblings?",
+          "user_prompt": "Say: Yes, I have two brothers.",
+          "expected_response": "Evet, iki erkek kardeşim var",
+          "mispronunciations": ["E-wet", "Er-kek kar-de-sim"],
+          "correction_hint": "'ş' is 'sh'. Say: ee-KEE er-KEK kar-de-SHEEM.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 22,
+          "speaker": "user",
+          "expected_response": "Evet, iki erkek kardeşim var",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 23,
+          "speaker": "app",
+          "turkish": "Ne güzel! Onlar nerede?",
+          "slow_phonetic": "Ne gu-zel! On-lar ne-re-de?",
+          "english": "How nice! Where are they?",
+          "user_prompt": "Say: They are in Nigeria.",
+          "expected_response": "Onlar Nijerya'da",
+          "mispronunciations": ["On-lar Ni-ger-ya-da"],
+          "correction_hint": "Remember the soft 'j'. Say: Nee-ZHER-ya-da.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 24,
+          "speaker": "user",
+          "expected_response": "Onlar Nijerya'da",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 25,
+          "speaker": "app",
+          "turkish": "Anlıyorum. Türkiye'yi seviyor musun?",
+          "slow_phonetic": "An-lu-yo-room. Tur-kee-ye-yee se-vee-yor moo-soon?",
+          "english": "I understand. Do you like Turkey?",
+          "user_prompt": "Say: Yes, I like it very much.",
+          "expected_response": "Evet, çok seviyorum",
+          "mispronunciations": ["Chok se-vi-yo-rum"],
+          "correction_hint": "Vowels are long. Say: se-VEE-yo-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 26,
+          "speaker": "user",
+          "expected_response": "Evet, çok seviyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 27,
+          "speaker": "app",
+          "turkish": "Bu harika! Türk yemeklerini denedin mi?",
+          "slow_phonetic": "Boo ha-ree-ka! Toork ye-mek-le-ree-nee de-ne-deen mee?",
+          "english": "This is great! Have you tried Turkish food?",
+          "user_prompt": "Say: Yes, I tried Kebab.",
+          "expected_response": "Evet, kebap denedim",
+          "mispronunciations": ["Ke-bab", "De-ne-dim"],
+          "correction_hint": "Turkish ends with 'p' in 'kebap'. Say: ke-BAP.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 28,
+          "speaker": "user",
+          "expected_response": "Evet, kebap denedim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 29,
+          "speaker": "app",
+          "turkish": "Afiyet olsun! Kebap çok lezzetlidir. Başka ne seversin?",
+          "slow_phonetic": "A-fee-yet ol-soon! Ke-bap chok lez-zet-lee-deer. Bash-ka ne se-ver-seen?",
+          "english": "Enjoy your meal! Kebab is very delicious. What else do you like?",
+          "user_prompt": "Say: I like tea.",
+          "expected_response": "Çay seviyorum",
+          "mispronunciations": ["Cay", "Chai"],
+          "correction_hint": "'Ç' is 'ch'. Say: CHAY.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 30,
+          "speaker": "user",
+          "expected_response": "Çay seviyorum",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 31,
+          "speaker": "app",
+          "turkish": "Türk çayı harikadır. Şekerli mi içersin?",
+          "slow_phonetic": "Toork cha-yu ha-ree-ka-dur. She-ker-lee mee ee-cher-seen?",
+          "english": "Turkish tea is wonderful. Do you drink it with sugar?",
+          "user_prompt": "Say: No, without sugar.",
+          "expected_response": "Hayır, şekersiz",
+          "mispronunciations": ["Se-ker-siz"],
+          "correction_hint": "Şeker (sugar) starts with 'sh'. Say: she-ker-SEEZ.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 32,
+          "speaker": "user",
+          "expected_response": "Hayır, şekersiz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 33,
+          "speaker": "app",
+          "turkish": "Doğru seçim, daha sağlıklı. Bugün ne yapacaksın?",
+          "slow_phonetic": "Do-roo se-cheem, da-ha sa-luk-lu. Boo-goon ne ya-pa-jak-sun?",
+          "english": "Right choice, healthier. What will you do today?",
+          "user_prompt": "Say: I will go to work.",
+          "expected_response": "İşe gideceğim",
+          "mispronunciations": ["I-se gi-de-ce-gim", "Ee-se gee-de-jem"],
+          "correction_hint": "‘ğ’ is silent, it elongates the vowel. Say: ee-SHE gee-de-JE-eem.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 34,
+          "speaker": "user",
+          "expected_response": "İşe gideceğim",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 35,
+          "speaker": "app",
+          "turkish": "Kolay gelsin! İşin zor mu?",
+          "slow_phonetic": "Ko-lay gel-seen! ee-sheen zor moo?",
+          "english": "May it be easy! Is your job difficult?",
+          "user_prompt": "Say: A little bit difficult.",
+          "expected_response": "Biraz zor",
+          "mispronunciations": ["Bi-raz zor"],
+          "correction_hint": "Stress the second syllable. Say: bee-RAZ zor.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 36,
+          "speaker": "user",
+          "expected_response": "Biraz zor",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 37,
+          "speaker": "app",
+          "turkish": "Anlıyorum ama sen iyi bir mühendissin. Başarılar dilerim!",
+          "slow_phonetic": "An-lu-yo-room a-ma sen ee-yee beer mu-hen-dees-seen. Ba-sha-ru-lar dee-le-reem!",
+          "english": "I understand but you are a good engineer. I wish you success!",
+          "user_prompt": "Say: Thank you very much.",
+          "expected_response": "Çok teşekkür ederim",
+          "mispronunciations": ["Te-se-kur", "Te-she-kool-ler"],
+          "correction_hint": "The 'ü' is like 'u' in 'pure'. Say: te-SHEK-kur e-de-REEM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 38,
+          "speaker": "user",
+          "expected_response": "Çok teşekkür ederim",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 39,
+          "speaker": "app",
+          "turkish": "Rica ederim. Boş zamanlarında ne yaparsın?",
+          "slow_phonetic": "Ree-ja e-de-reem. Bosh za-man-la-run-da ne ya-par-sun?",
+          "english": "You're welcome. What do you do in your free time?",
+          "user_prompt": "Say: I read books.",
+          "expected_response": "Kitap okuyorum",
+          "mispronunciations": ["Ki-tap o-ku-yo-rum"],
+          "correction_hint": "Say it smoothly: kee-TAP o-koo-YO-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 40,
+          "speaker": "user",
+          "expected_response": "Kitap okuyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 41,
+          "speaker": "app",
+          "turkish": "Kitap okumak güzeldir. Hangi dilde okuyorsun?",
+          "slow_phonetic": "Kee-tap o-koo-mak gu-zel-deer. Han-gee deel-de o-koo-yor-soon?",
+          "english": "Reading books is nice. In which language do you read?",
+          "user_prompt": "Say: I read in English.",
+          "expected_response": "İngilizce okuyorum",
+          "mispronunciations": ["In-gi-liz-ce"],
+          "correction_hint": "'c' is 'j'. Say: een-gee-LEEZ-je.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 42,
+          "speaker": "user",
+          "expected_response": "İngilizce okuyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 43,
+          "speaker": "app",
+          "turkish": "Harika. Türkçe de okuyacak mısın?",
+          "slow_phonetic": "Ha-ree-ka. Toork-che de o-koo-ya-jak mu-soon?",
+          "english": "Wonderful. Will you read in Turkish too?",
+          "user_prompt": "Say: Yes, soon.",
+          "expected_response": "Evet, yakında",
+          "mispronunciations": ["Ya-kin-da"],
+          "correction_hint": "'ı' is a neutral vowel. Say: ya-KUN-da.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 44,
+          "speaker": "user",
+          "expected_response": "Evet, yakında",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 45,
+          "speaker": "app",
+          "turkish": "Çok iyi. Türkçe zor mu sence?",
+          "slow_phonetic": "Chok ee-yee. Toork-che zor moo sen-je?",
+          "english": "Very good. Is Turkish difficult in your opinion?",
+          "user_prompt": "Say: It is a bit difficult but fun.",
+          "expected_response": "Biraz zor ama eğlenceli",
+          "mispronunciations": ["E-len-ce-li", "E-glan-ce-li"],
+          "correction_hint": "'ğ' is silent. Say: ey-len-JE-lee.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 46,
+          "speaker": "user",
+          "expected_response": "Biraz zor ama eğlenceli",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 47,
+          "speaker": "app",
+          "turkish": "Katılıyorum! Zamanla öğreneceksin. Şimdi gitmem lazım.",
+          "slow_phonetic": "Ka-tu-lu-yo-room! Za-man-la uy-re-ne-jek-seen. Sheem-dee geet-mem la-zum.",
+          "english": "I agree! You will learn over time. Now I must go.",
+          "user_prompt": "Say: Okay, see you later.",
+          "expected_response": "Tamam, sonra görüşürüz",
+          "mispronunciations": ["Go-ru-su-ruz"],
+          "correction_hint": "'ş' is 'sh'. Say: gu-ru-SHU-ruz.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 48,
+          "speaker": "user",
+          "expected_response": "Tamam, sonra görüşürüz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 49,
+          "speaker": "app",
+          "turkish": "Görüşürüz! Kendine iyi bak.",
+          "slow_phonetic": "Gu-ru-shoo-rooz! Ken-dee-ne ee-yee bak.",
+          "english": "See you! Take care of yourself.",
+          "user_prompt": "Say: You too, goodbye.",
+          "expected_response": "Sen de, hoşça kal",
+          "mispronunciations": ["Hos-ca kal"],
+          "correction_hint": "‘ş’ is ‘sh’. Say: HOSH-cha kal.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 50,
+          "speaker": "user",
+          "expected_response": "Sen de, hoşça kal",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 51,
+          "speaker": "app",
+          "turkish": "Merhaba tekrar! Bugün nasılsın?",
+          "slow_phonetic": "Mer-ha-ba tek-rar! Boo-goon na-sıl-sın?",
+          "english": "Hello again! How are you today?",
+          "user_prompt": "Say: I am very well, thanks.",
+          "expected_response": "Çok iyiyim, teşekkürler",
+          "mispronunciations": ["Cok i-yi-yim", "Chok eey-yim"],
+          "correction_hint": "Say 'çok' with a 'ch' sound. EE-yee-yeem.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 52,
+          "speaker": "user",
+          "expected_response": "Çok iyiyim, teşekkürler",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 53,
+          "speaker": "app",
+          "turkish": "Bir plan yapalım. Bugün günlerden ne?",
+          "slow_phonetic": "Beer plan ya-pa-lım. Boo-goon goon-ler-den ne?",
+          "english": "Let's make a plan. What day is it today?",
+          "user_prompt": "Say: Today is Monday.",
+          "expected_response": "Bugün Pazartesi",
+          "mispronunciations": ["Bu-gun Pa-zar-te-si"],
+          "correction_hint": "'ü' needs rounded lips. Boo-GOON Pa-ZAR-te-see.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 54,
+          "speaker": "user",
+          "expected_response": "Bugün Pazartesi",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 55,
+          "speaker": "app",
+          "turkish": "Tamam. Çarşamba günü boş musun?",
+          "slow_phonetic": "Ta-mam. Char-sham-ba goo-noo bosh moo-soon?",
+          "english": "Okay. Are you free on Wednesday?",
+          "user_prompt": "Say: Yes, I am free on Wednesday.",
+          "expected_response": "Evet, Çarşamba günü boşum",
+          "mispronunciations": ["Car-sam-ba", "Bo-sum"],
+          "correction_hint": "Lots of 'sh' and 'ch' sounds. Char-SHAM-ba goo-noo bo-SHOOM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 56,
+          "speaker": "user",
+          "expected_response": "Evet, Çarşamba günü boşum",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 57,
+          "speaker": "app",
+          "turkish": "Bir kafede buluşalım. Kahve ister misin?",
+          "slow_phonetic": "Beer ka-fe-de boo-loo-sha-lım. Kah-ve ees-ter mee-seen?",
+          "english": "Let's meet at a cafe. Do you want coffee?",
+          "user_prompt": "Say: Yes, I like coffee.",
+          "expected_response": "Evet, kahve severim",
+          "mispronunciations": ["E-wet", "Kah-we"],
+          "correction_hint": "Use a clear English 'v', not 'w'. Kah-VE.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 58,
+          "speaker": "user",
+          "expected_response": "Evet, kahve severim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 59,
+          "speaker": "app",
+          "turkish": "Saat kaçta buluşalım?",
+          "slow_phonetic": "Sa-at kach-ta boo-loo-sha-lım?",
+          "english": "What time shall we meet?",
+          "user_prompt": "Say: Let's meet at two o'clock.",
+          "expected_response": "Saat ikide buluşalım",
+          "mispronunciations": ["Sat i-ki-de", "Bu-lu-sa-lim"],
+          "correction_hint": "Double 'a' in saat means hold it slightly longer. Sa-AT ee-kee-DE.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 60,
+          "speaker": "user",
+          "expected_response": "Saat ikide buluşalım",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 61,
+          "speaker": "app",
+          "turkish": "Saat iki çok mu erken? Üç nasıl?",
+          "slow_phonetic": "Sa-at ee-kee chok moo er-ken? Ooch na-sıl?",
+          "english": "Is two o'clock too early? What about three?",
+          "user_prompt": "Say: Okay, three o'clock is good.",
+          "expected_response": "Tamam, saat üç uygun",
+          "mispronunciations": ["Uc uy-gun", "Ooc uy-gun"],
+          "correction_hint": "Tightly rounded lips for 'üç'. OOCH ooy-GOON.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 62,
+          "speaker": "user",
+          "expected_response": "Tamam, saat üç uygun",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 63,
+          "speaker": "app",
+          "turkish": "Harika. Kaç kişiyiz?",
+          "slow_phonetic": "Ha-ree-ka. Kach kee-shee-yeez?",
+          "english": "Perfect. How many people are we?",
+          "user_prompt": "Say: We are two people.",
+          "expected_response": "Biz iki kişiyiz",
+          "mispronunciations": ["Biz i-ki ki-si-yiz"],
+          "correction_hint": "Pronounce 'ş' as 'sh'. Beez ee-KEE kee-shee-YEEZ.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 64,
+          "speaker": "user",
+          "expected_response": "Biz iki kişiyiz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 65,
+          "speaker": "app",
+          "turkish": "Ona kadar sayabilir misin?",
+          "slow_phonetic": "O-na ka-dar sa-ya-bee-leer mee-seen?",
+          "english": "Can you count to ten?",
+          "user_prompt": "Say: One, two, three, four...",
+          "expected_response": "Bir, iki, üç, dört",
+          "mispronunciations": ["Dort (like english door)"],
+          "correction_hint": "For 'ö' round your lips and say 'e'. DÖRT.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 66,
+          "speaker": "user",
+          "expected_response": "Bir, iki, üç, dört",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 67,
+          "speaker": "app",
+          "turkish": "Çok iyi! Peki ya devamı?",
+          "slow_phonetic": "Chok ee-yee! Pe-kee ya de-va-mı?",
+          "english": "Very good! And the rest?",
+          "user_prompt": "Say: Five, six, seven, eight...",
+          "expected_response": "Beş, altı, yedi, sekiz",
+          "mispronunciations": ["Bes", "Al-ti"],
+          "correction_hint": "Keep 'ş' as 'sh' and 'ı' as neutral 'uh'. BESH, al-TUH, ye-DEE, se-KEEZ.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 68,
+          "speaker": "user",
+          "expected_response": "Beş, altı, yedi, sekiz",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 69,
+          "speaker": "app",
+          "turkish": "Ve son iki sayı?",
+          "slow_phonetic": "Ve son ee-kee sa-yı?",
+          "english": "And the last two numbers?",
+          "user_prompt": "Say: Nine, ten.",
+          "expected_response": "Dokuz, on",
+          "mispronunciations": ["Do-kuz (english u)"],
+          "correction_hint": "Use a deep 'oo' sound for 'u'. Do-KOOZ, on.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 70,
+          "speaker": "user",
+          "expected_response": "Dokuz, on",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 71,
+          "speaker": "app",
+          "turkish": "Mükemmel! Daha fazla sayı çalışalım.",
+          "slow_phonetic": "Moo-kem-mel! Da-ha faz-la sa-yı cha-lı-sha-lım.",
+          "english": "Excellent! Let's practice more numbers.",
+          "user_prompt": "Say: Okay, let's practice.",
+          "expected_response": "Tamam, çalışalım",
+          "mispronunciations": ["Ca-li-sa-lim"],
+          "correction_hint": "Use 'ch' and 'sh' sounds. cha-lı-SHA-lım.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 72,
+          "speaker": "user",
+          "expected_response": "Tamam, çalışalım",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 73,
+          "speaker": "app",
+          "turkish": "Ondan sonra ne gelir?",
+          "slow_phonetic": "On-dan son-ra ne ge-leer?",
+          "english": "What is after ten?",
+          "user_prompt": "Say: Eleven, twelve.",
+          "expected_response": "On bir, on iki",
+          "mispronunciations": ["On beer, on i-ki"],
+          "correction_hint": "Clearly separate the words. On BEER, on ee-KEE.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 74,
+          "speaker": "user",
+          "expected_response": "On bir, on iki",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 75,
+          "speaker": "app",
+          "turkish": "Evet. Sonra on üç, on dört, on beş.",
+          "slow_phonetic": "E-vet. Son-ra on ooch, on dort, on besh.",
+          "english": "Yes. Then thirteen, fourteen, fifteen.",
+          "user_prompt": "Say: Sixteen, seventeen.",
+          "expected_response": "On altı, on yedi",
+          "mispronunciations": ["On al-ti, on ye-di"],
+          "correction_hint": "Watch the 'ı' in altı. On al-TUH, on ye-DEE.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 76,
+          "speaker": "user",
+          "expected_response": "On altı, on yedi",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 77,
+          "speaker": "app",
+          "turkish": "Ve son olarak on sekiz, on dokuz, yirmi.",
+          "slow_phonetic": "Ve son o-la-rak on se-keez, on do-kooz, yeer-mee.",
+          "english": "And finally eighteen, nineteen, twenty.",
+          "user_prompt": "Say: I counted to twenty.",
+          "expected_response": "Yirmiye kadar saydım",
+          "mispronunciations": ["Yir-mi-ye ka-dar say-dim"],
+          "correction_hint": "Make sure 'saydım' uses the neutral 'ı'. Say-DUM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 78,
+          "speaker": "user",
+          "expected_response": "Yirmiye kadar saydım",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 79,
+          "speaker": "app",
+          "turkish": "Harika iş! Haftanın günlerini hatırlıyor musun?",
+          "slow_phonetic": "Ha-ree-ka eesh! Haf-ta-nın goon-le-ree-nee ha-tır-lı-yor moo-soon?",
+          "english": "Great job! Do you remember the days of the week?",
+          "user_prompt": "Say: Monday, Tuesday, Wednesday.",
+          "expected_response": "Pazartesi, Salı, Çarşamba",
+          "mispronunciations": ["Pa-zar-te-si, Sa-li, Car-sam-ba"],
+          "correction_hint": "'Salı' ends with the neutral 'ı'. Sa-LUH.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 80,
+          "speaker": "user",
+          "expected_response": "Pazartesi, Salı, Çarşamba",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 81,
+          "speaker": "app",
+          "turkish": "Çarşambadan sonra ne gelir?",
+          "slow_phonetic": "Char-sham-ba-dan son-ra ne ge-leer?",
+          "english": "What comes after Wednesday?",
+          "user_prompt": "Say: Thursday and Friday.",
+          "expected_response": "Perşembe ve Cuma",
+          "mispronunciations": ["Per-sem-be", "Cu-ma"],
+          "correction_hint": "'C' sounds like 'j' in jump. Joo-MA.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 82,
+          "speaker": "user",
+          "expected_response": "Perşembe ve Cuma",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 83,
+          "speaker": "app",
+          "turkish": "Peki hafta sonu?",
+          "slow_phonetic": "Pe-kee haf-ta so-noo?",
+          "english": "And the weekend?",
+          "user_prompt": "Say: Saturday and Sunday.",
+          "expected_response": "Cumartesi ve Pazar",
+          "mispronunciations": ["Cu-mar-te-si"],
+          "correction_hint": "Remember the 'j' sound again. Joo-MAR-te-see.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 84,
+          "speaker": "user",
+          "expected_response": "Cumartesi ve Pazar",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 85,
+          "speaker": "app",
+          "turkish": "Tebrikler. Buluşmamız Çarşamba günü.",
+          "slow_phonetic": "Teb-reek-ler. Boo-loosh-ma-mız Char-sham-ba goo-noo.",
+          "english": "Well done. Our meeting is on Wednesday.",
+          "user_prompt": "Say: Yes, at the cafe.",
+          "expected_response": "Evet, kafede",
+          "mispronunciations": ["E-wet ka-fe-de"],
+          "correction_hint": "Crisp 'v' sound. E-vet, ka-fe-DE.",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 86,
+          "speaker": "user",
+          "expected_response": "Evet, kafede",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 87,
+          "speaker": "app",
+          "turkish": "Hangi kafeyi tercih edersin?",
+          "slow_phonetic": "Han-gee ka-fe-yee ter-jeeh e-der-seen?",
+          "english": "Which cafe do you prefer?",
+          "user_prompt": "Say: The cafe in the center.",
+          "expected_response": "Merkezdeki kafeyi",
+          "mispronunciations": ["Mer-kez-de-ki ka-fe-yi"],
+          "correction_hint": "Stress the ending smoothly. Mer-kez-de-KEE ka-fe-YEE.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 88,
+          "speaker": "user",
+          "expected_response": "Merkezdeki kafeyi",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 89,
+          "speaker": "app",
+          "turkish": "Orasını biliyorum. Saat sekizde açılıyor.",
+          "slow_phonetic": "O-ra-sı-nı bee-lee-yo-room. Sa-at se-keez-de a-çı-lı-yor.",
+          "english": "I know that place. It opens at eight.",
+          "user_prompt": "Say: Good, see you at three.",
+          "expected_response": "Güzel, saat üçte görüşürüz",
+          "mispronunciations": ["Gu-zel", "Go-ru-su-ruz"],
+          "correction_hint": "Round lips for 'ü' and 'ö'. Gu-ZEL, sa-AT ooch-TE gu-ru-SHU-ruz.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 90,
+          "speaker": "user",
+          "expected_response": "Güzel, saat üçte görüşürüz",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 91,
+          "speaker": "app",
+          "turkish": "Dur, ondan önce marketten bir şeye ihtiyacın var mı?",
+          "slow_phonetic": "Door, on-dan on-je mar-ket-ten beer she-ye eeh-tee-ya-jın var mı?",
+          "english": "Wait, do you need anything from the market before that?",
+          "user_prompt": "Say: No, thank you.",
+          "expected_response": "Hayır, teşekkür ederim",
+          "mispronunciations": ["Ha-yir", "Te-se-kur"],
+          "correction_hint": "Crisp 'h' on Hayır, and 'sh' for teşekkür. HA-yur, te-shek-KUR e-de-REEM.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 92,
+          "speaker": "user",
+          "expected_response": "Hayır, teşekkür ederim",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 93,
+          "speaker": "app",
+          "turkish": "Peki, Çarşamba gününe kadar ne yapacaksın?",
+          "slow_phonetic": "Pe-kee, Char-sham-ba goo-noo-ne ka-dar ne ya-pa-jak-sın?",
+          "english": "Alright, what will you do until Wednesday?",
+          "user_prompt": "Say: I will work and rest.",
+          "expected_response": "Çalışacağım ve dinleneceğim",
+          "mispronunciations": ["Ca-li-sa-ca-gim", "Din-le-ne-ce-gim"],
+          "correction_hint": "The 'ğ' is silent and just elongates the vowel. Cha-lı-sha-JA-um ve deen-le-ne-JE-eem.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 94,
+          "speaker": "user",
+          "expected_response": "Çalışacağım ve dinleneceğim",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 95,
+          "speaker": "app",
+          "turkish": "Dinlenmek önemli. Erken uyur musun?",
+          "slow_phonetic": "Deen-len-mek o-nem-lee. Er-ken oo-yoor moo-soon?",
+          "english": "Resting is important. Do you sleep early?",
+          "user_prompt": "Say: I sleep at eleven.",
+          "expected_response": "Saat on birde uyurum",
+          "mispronunciations": ["Sat on bir-de u-yu-rum"],
+          "correction_hint": "Stress 'birde' and smoothly say 'uyurum'. Sa-AT on beer-DE oo-YOO-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 96,
+          "speaker": "user",
+          "expected_response": "Saat on birde uyurum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 97,
+          "speaker": "app",
+          "turkish": "Bu iyi bir saat.",
+          "slow_phonetic": "Boo ee-yee beer sa-at.",
+          "english": "That is a good time.",
+          "user_prompt": "Say: Yes, I agree.",
+          "expected_response": "Evet, katılıyorum",
+          "mispronunciations": ["Ka-ti-li-yo-rum"],
+          "correction_hint": "Use the neutral 'ı' correctly. Ka-tuh-LUH-yo-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 98,
+          "speaker": "user",
+          "expected_response": "Evet, katılıyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 99,
+          "speaker": "app",
+          "turkish": "Şimdi gitmem lazım. İyi günler!",
+          "slow_phonetic": "Sheem-dee geet-mem la-zım. ee-yee goon-ler!",
+          "english": "I have to go now. Have a nice day!",
+          "user_prompt": "Say: Have a nice day!",
+          "expected_response": "İyi günler!",
+          "mispronunciations": ["I-yi gun-ler"],
+          "correction_hint": "Round lips for 'ü'. EE-yee goon-LER!",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 100,
+          "speaker": "user",
+          "expected_response": "İyi günler!",
+          "min_score": 0.8
+        },
+        {
+          "line_number": 101,
+          "speaker": "app",
+          "turkish": "Merhaba tekrar! Bugün Çarşamba. Hazır mısın?",
+          "slow_phonetic": "Mer-ha-ba tek-rar! Boo-goon Char-sham-ba. Ha-zır mı-sın?",
+          "english": "Hello again! Today is Wednesday. Are you ready?",
+          "user_prompt": "Say: Yes, I am absolutely ready.",
+          "expected_response": "Evet, kesinlikle hazırım",
+          "mispronunciations": ["Ke-sin-lik-le ha-zi-rim"],
+          "correction_hint": "Keep 'ı' neutral in hazırım. ke-seen-LEEK-le ha-ZU-rum.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 102,
+          "speaker": "user",
+          "expected_response": "Evet, kesinlikle hazırım",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 103,
+          "speaker": "app",
+          "turkish": "Harika. Kafeye doğru yoldayım. Sen neredesin?",
+          "slow_phonetic": "Ha-ree-ka. Ka-fe-ye do-ru yol-da-yım. Sen ne-re-de-seen?",
+          "english": "Great. I am on my way to the cafe. Where are you?",
+          "user_prompt": "Say: I am walking on the road right now.",
+          "expected_response": "Ben şu an yolda yürüyorum",
+          "mispronunciations": ["Yu-ru-yo-rum"],
+          "correction_hint": "Round lips tightly for 'ü'. yue-rue-YO-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 104,
+          "speaker": "user",
+          "expected_response": "Ben şu an yolda yürüyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 105,
+          "speaker": "app",
+          "turkish": "Kafenin yolunu biliyor musun?",
+          "slow_phonetic": "Ka-fe-neen yo-loo-noo bee-lee-yor moo-soon?",
+          "english": "Do you know the way to the cafe?",
+          "user_prompt": "Say: No, I need directions.",
+          "expected_response": "Hayır, bana adres tarifi lazım",
+          "mispronunciations": ["Ta-ri-fi la-zim"],
+          "correction_hint": "Make sure 'lazım' has a long 'a' and neutral 'ı'. la-ZUM.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 106,
+          "speaker": "user",
+          "expected_response": "Hayır, bana adres tarifi lazım",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 107,
+          "speaker": "app",
+          "turkish": "Sorun değil. Parktan düz git.",
+          "slow_phonetic": "So-roon de-yeel. Park-tan dooz geet.",
+          "english": "No problem. Go straight from the park.",
+          "user_prompt": "Say: Okay, I am going straight from the park.",
+          "expected_response": "Tamam, parktan düz gidiyorum",
+          "mispronunciations": ["Duz gi-di-yo-rum"],
+          "correction_hint": "Use the rounded 'ü' for düz. dooz gee-DEE-yo-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 108,
+          "speaker": "user",
+          "expected_response": "Tamam, parktan düz gidiyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 109,
+          "speaker": "app",
+          "turkish": "Sonra trafik ışıklarında sağa dön.",
+          "slow_phonetic": "Son-ra tra-feek ı-şık-la-rın-da sa-a don.",
+          "english": "Then turn right at the traffic lights.",
+          "user_prompt": "Say: I am turning right at the traffic lights.",
+          "expected_response": "Trafik ışıklarında sağa dönüyorum",
+          "mispronunciations": ["I-sik-la-rin-da", "Sa-ga do-nu-yo-rum"],
+          "correction_hint": "The 'ğ' is silent, just say 'saa'. ı-şık-la-rın-da sa-a dö-nü-yo-rum.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 110,
+          "speaker": "user",
+          "expected_response": "Trafik ışıklarında sağa dönüyorum",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 111,
+          "speaker": "app",
+          "turkish": "Evet. Kafe senin solunda kalacak.",
+          "slow_phonetic": "E-vet. Ka-fe se-neen so-loon-da ka-la-jak.",
+          "english": "Yes. The cafe is on your left.",
+          "user_prompt": "Say: Yes, I see the cafe right in front of me now.",
+          "expected_response": "Evet, şimdi kafeyi tam karşımda görüyorum",
+          "mispronunciations": ["Sim-di", "Ka-fe-yi", "Go-ru-yo-rum"],
+          "correction_hint": "'ş' is 'sh'. sheem-DEE ka-fe-YEE tam kar-shım-DA go-rue-YO-room.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 112,
+          "speaker": "user",
+          "expected_response": "Evet, şimdi kafeyi tam karşımda görüyorum",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 113,
+          "speaker": "app",
+          "turkish": "Ben içerideyim. Menü bende.",
+          "slow_phonetic": "Ben ee-che-ree-de-yeem. Me-noo ben-de.",
+          "english": "I am inside. I have a menu.",
+          "user_prompt": "Say: Okay, I am coming inside now too.",
+          "expected_response": "Tamam, ben de şimdi içeri giriyorum",
+          "mispronunciations": ["Sim-di i-ce-ri"],
+          "correction_hint": "'ç' is 'ch'. sheem-DEE ee-che-REE gee-REE-yo-room.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 114,
+          "speaker": "user",
+          "expected_response": "Tamam, ben de şimdi içeri giriyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 115,
+          "speaker": "app",
+          "turkish": "Hoş geldin! Buraya otur. Ne içmek istersin?",
+          "slow_phonetic": "Hosh gel-deen! Boo-ra-ya o-toor. Ne eech-mek ees-ter-seen?",
+          "english": "Welcome! Sit here. What would you like to drink?",
+          "user_prompt": "Say: I am requesting a hot tea.",
+          "expected_response": "Ben sıcak bir çay rica ediyorum",
+          "mispronunciations": ["Si-cak", "Cay", "E-di-yo-rum"],
+          "correction_hint": "'c' is 'j', 'ç' is 'ch'. su-JAK beer CHAY ree-JA e-dee-yo-room.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 116,
+          "speaker": "user",
+          "expected_response": "Ben sıcak bir çay rica ediyorum",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 117,
+          "speaker": "app",
+          "turkish": "Sadece çay mı? Aç mısın?",
+          "slow_phonetic": "Sa-de-je chay mı? Ach mı-sın?",
+          "english": "Just tea? Are you hungry?",
+          "user_prompt": "Say: Yes, I am really very hungry today.",
+          "expected_response": "Evet, bugün gerçekten çok açım",
+          "mispronunciations": ["Ger-cek-ten", "Ac-im"],
+          "correction_hint": "ger-CHEK-ten chok A-chım.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 118,
+          "speaker": "user",
+          "expected_response": "Evet, bugün gerçekten çok açım",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 119,
+          "speaker": "app",
+          "turkish": "Garson bey, sipariş verebilir miyiz?",
+          "slow_phonetic": "Gar-son bey, see-pa-reesh ve-re-bee-leer mee-yeez?",
+          "english": "Waiter, can we order?",
+          "user_prompt": "Say: What exactly is on the menu today?",
+          "expected_response": "Bugün menüde tam olarak ne var?",
+          "mispronunciations": ["Me-nu-de", "O-la-rak"],
+          "correction_hint": "Stress clearly: boo-GOON me-nue-DE tam o-la-rak ne var?",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 120,
+          "speaker": "user",
+          "expected_response": "Bugün menüde tam olarak ne var?",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 121,
+          "speaker": "app",
+          "turkish": "Tavuk, mercimek çorbası ve salata var.",
+          "slow_phonetic": "Ta-vook, mer-jee-mek chor-ba-sı ve sa-la-ta var.",
+          "english": "There is chicken, lentil soup, and salad.",
+          "user_prompt": "Say: I want a lentil soup.",
+          "expected_response": "Ben bir mercimek çorbası istiyorum",
+          "mispronunciations": ["Mer-ci-mek cor-ba-si"],
+          "correction_hint": "Use 'j' for 'c' and 'ch' for 'ç'. mer-jee-MEK chor-ba-SUH.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 122,
+          "speaker": "user",
+          "expected_response": "Ben bir mercimek çorbası istiyorum",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 123,
+          "speaker": "app",
+          "turkish": "İyi seçim. Ben tavuk yiyeceğim.",
+          "slow_phonetic": "Ee-yee se-cheem. Ben ta-vook yee-ye-je-eem.",
+          "english": "Good choice. I will eat chicken.",
+          "user_prompt": "Say: I wonder, how much is the lentil soup?",
+          "expected_response": "Mercimek çorbası ne kadar acaba?",
+          "mispronunciations": ["A-ca-ba"],
+          "correction_hint": "'c' is 'j'. a-ja-BA.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 124,
+          "speaker": "user",
+          "expected_response": "Mercimek çorbası ne kadar acaba?",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 125,
+          "speaker": "app",
+          "turkish": "Çorba sadece elli lira.",
+          "slow_phonetic": "Chor-ba sa-de-je el-lee lee-ra.",
+          "english": "The soup is only fifty liras.",
+          "user_prompt": "Say: This price is really not very expensive.",
+          "expected_response": "Bu fiyat gerçekten çok pahalı değil",
+          "mispronunciations": ["Pa-ha-li de-gil"],
+          "correction_hint": "The 'ğ' is silent in değil, it sounds like 'de-yeel'. pa-ha-LUH de-YEEL.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 126,
+          "speaker": "user",
+          "expected_response": "Bu fiyat gerçekten çok pahalı değil",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 127,
+          "speaker": "app",
+          "turkish": "Hayır, ucuz. Yemekler geldi. Afiyet olsun!",
+          "slow_phonetic": "Ha-yır, oo-jooz. Ye-mek-ler gel-dee. A-fee-yet ol-soon!",
+          "english": "No, it is cheap. The food is here. Enjoy!",
+          "user_prompt": "Say: Thanks a lot, enjoy your meal too.",
+          "expected_response": "Çok teşekkürler, sana da afiyet olsun",
+          "mispronunciations": ["Te-sek-kur-ler"],
+          "correction_hint": "chok te-shek-kür-LER, sa-na da a-fee-yet ol-soon.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 128,
+          "speaker": "user",
+          "expected_response": "Çok teşekkürler, sana da afiyet olsun",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 129,
+          "speaker": "app",
+          "turkish": "Yemek lezzetliydi. Hesabı ödeyelim.",
+          "slow_phonetic": "Ye-mek lez-zet-lee-ydee. He-sa-bı o-de-ye-leem.",
+          "english": "The meal was delicious. Let's pay the bill.",
+          "user_prompt": "Say: Please let me pay the bill today.",
+          "expected_response": "Bugün hesabı lütfen ben ödeyeyim",
+          "mispronunciations": ["He-sa-bi lut-fen"],
+          "correction_hint": "Neutral 'ı' in hesabı. he-sa-BUH luet-FEN ben oe-de-ye-yeem.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 130,
+          "speaker": "user",
+          "expected_response": "Bugün hesabı lütfen ben ödeyeyim",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 131,
+          "speaker": "app",
+          "turkish": "Emin misin? Çok teşekkür ederim.",
+          "slow_phonetic": "E-meen mee-seen? Chok te-shek-kur e-de-reem.",
+          "english": "Are you sure? Thank you very much.",
+          "user_prompt": "Say: You're welcome. Shall we go shopping now?",
+          "expected_response": "Rica ederim. Şimdi alışverişe gidelim mi?",
+          "mispronunciations": ["Ri-ca", "A-lis-ve-ri-se"],
+          "correction_hint": "ree-JA e-de-reem. sheem-DEE a-lısh-ve-ree-SHE gee-de-LEEM mee?",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 132,
+          "speaker": "user",
+          "expected_response": "Rica ederim. Şimdi alışverişe gidelim mi?",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 133,
+          "speaker": "app",
+          "turkish": "Markete gidelim. Gömleğe ihtiyacın var mı?",
+          "slow_phonetic": "Mar-ke-te gee-de-leem. Gom-le-e eeh-tee-ya-jın var mı?",
+          "english": "Let's go to the market. Do you need a shirt?",
+          "user_prompt": "Say: Yes, I want a new blue shirt.",
+          "expected_response": "Evet, yeni mavi bir gömlek istiyorum",
+          "mispronunciations": ["Ma-vi", "Gom-lek"],
+          "correction_hint": "Round your lips for 'ö'. goem-LEK.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 134,
+          "speaker": "user",
+          "expected_response": "Evet, yeni mavi bir gömlek istiyorum",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 135,
+          "speaker": "app",
+          "turkish": "Şu mavi gömleğe bak. Dene istersen.",
+          "slow_phonetic": "Shoo ma-vee gom-le-e bak. De-ne ees-ter-sen.",
+          "english": "Look at that blue shirt. Try it on if you want.",
+          "user_prompt": "Say: This shirt fits me perfectly.",
+          "expected_response": "Bu gömlek tam üzerime göre oldu",
+          "mispronunciations": ["U-ze-ri-me", "Go-re"],
+          "correction_hint": "Round lips for 'ü' and 'ö'. ue-ze-ree-ME goe-RE ol-DOO.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 136,
+          "speaker": "user",
+          "expected_response": "Bu gömlek tam üzerime göre oldu",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 137,
+          "speaker": "app",
+          "turkish": "Fiyatını soralım. Afedersiniz, bu ne kadar?",
+          "slow_phonetic": "Fee-ya-tı-nı so-ra-lım. A-fe-der-see-neez, boo ne ka-dar?",
+          "english": "Let's ask the price. Excuse me, how much is this?",
+          "user_prompt": "Say: The seller says it is five hundred liras.",
+          "expected_response": "Satıcı beş yüz lira olduğunu söylüyor",
+          "mispronunciations": ["Sa-ti-ci", "Bes yuz", "Soy-lu-yor"],
+          "correction_hint": "sa-tuh-JUH besh YUEZ lee-RA ol-doo-u-noo soey-lue-YOR.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 138,
+          "speaker": "user",
+          "expected_response": "Satıcı beş yüz lira olduğunu söylüyor",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 139,
+          "speaker": "app",
+          "turkish": "Bu biraz pahalı. İndirim yapabilir misiniz?",
+          "slow_phonetic": "Boo bee-raz pa-ha-lı. Een-dee-reem ya-pa-bee-leer mee-see-neez?",
+          "english": "This is a bit expensive. Can you give a discount?",
+          "user_prompt": "Say: Please make the price four hundred liras.",
+          "expected_response": "Lütfen fiyatı dört yüz lira yapın",
+          "mispronunciations": ["Lut-fen", "Dort yuz"],
+          "correction_hint": "luet-FEN fee-ya-TUH doert YUEZ lee-RA ya-PUN.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 140,
+          "speaker": "user",
+          "expected_response": "Lütfen fiyatı dört yüz lira yapın",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 141,
+          "speaker": "app",
+          "turkish": "Satıcı kabul etti! Pazarlıkta çok iyisin.",
+          "slow_phonetic": "Sa-tı-jı ka-bool et-tee! Pa-zar-lık-ta chok ee-yee-seen.",
+          "english": "The seller agreed! You are very good at bargaining.",
+          "user_prompt": "Say: Yes, I think this is a very good price.",
+          "expected_response": "Evet, bence bu çok iyi bir fiyat",
+          "mispronunciations": ["Ben-ce"],
+          "correction_hint": "'c' is 'j'. ben-JE boo chok ee-YEE beer fee-YAT.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 142,
+          "speaker": "user",
+          "expected_response": "Evet, bence bu çok iyi bir fiyat",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 143,
+          "speaker": "app",
+          "turkish": "İşte poşetin. Başka bir şeye ihtiyacımız var mı?",
+          "slow_phonetic": "Eesh-te po-she-teen. Bash-ka beer she-ye eeh-tee-ya-jı-mız var mı?",
+          "english": "Here is your bag. Do we need anything else?",
+          "user_prompt": "Say: Maybe we can buy some fresh apples too.",
+          "expected_response": "Belki biraz da taze elma alabiliriz",
+          "mispronunciations": ["Ta-ze", "A-la-bi-li-riz"],
+          "correction_hint": "ta-ZE el-MA a-la-bee-lee-REEZ.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 144,
+          "speaker": "user",
+          "expected_response": "Belki biraz da taze elma alabiliriz",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 145,
+          "speaker": "app",
+          "turkish": "Manav hemen caddenin karşısında.",
+          "slow_phonetic": "Ma-nav he-men jad-de-neen kar-şı-sın-da.",
+          "english": "The greengrocer is right across the street.",
+          "user_prompt": "Say: Okay, let's carefully cross the street.",
+          "expected_response": "Tamam, dikkatlice caddeden karşıya geçelim",
+          "mispronunciations": ["Dik-kat-li-ce", "Cad-de-den"],
+          "correction_hint": "deek-kat-LEE-je jad-de-DEN kar-shu-YA ge-che-LEEM.",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 146,
+          "speaker": "user",
+          "expected_response": "Tamam, dikkatlice caddeden karşıya geçelim",
+          "min_score": 0.7
+        },
+        {
+          "line_number": 147,
+          "speaker": "app",
+          "turkish": "Dikkatli ol, sola ve sağa bak.",
+          "slow_phonetic": "Deek-kat-lee ol, so-la ve sa-a bak.",
+          "english": "Be careful, look left and right.",
+          "user_prompt": "Say: The road seems completely empty right now.",
+          "expected_response": "Şu anda yol tamamen boş görünüyor",
+          "mispronunciations": ["Ta-ma-men", "Go-ru-nu-yor"],
+          "correction_hint": "shoo an-DA yol ta-MA-men bosh goe-rue-nue-YOR.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 148,
+          "speaker": "user",
+          "expected_response": "Şu anda yol tamamen boş görünüyor",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 149,
+          "speaker": "app",
+          "turkish": "İki kilo kırmızı elma alalım.",
+          "slow_phonetic": "Ee-kee kee-lo kır-mı-zı el-ma a-la-lım.",
+          "english": "Let's buy two kilos of red apples.",
+          "user_prompt": "Say: These red apples look very fresh.",
+          "expected_response": "Bu kırmızı elmalar çok taze görünüyor",
+          "mispronunciations": ["Kir-mi-zi el-ma-lar"],
+          "correction_hint": "Use neutral 'ı' deeply. kur-mu-ZUH el-ma-LAR chok ta-ZE goe-rue-nue-YOR.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 150,
+          "speaker": "user",
+          "expected_response": "Bu kırmızı elmalar çok taze görünüyor",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 151,
+          "speaker": "app",
+          "turkish": "Evet. Elmalar için elli lira burada.",
+          "slow_phonetic": "E-vet. El-ma-lar ee-cheen el-lee lee-ra boo-ra-da.",
+          "english": "Yes. Here is fifty liras for the apples.",
+          "user_prompt": "Say: Thanks a lot, we bought everything today.",
+          "expected_response": "Çok teşekkürler, bugün her şeyi aldık",
+          "mispronunciations": ["Her se-yi al-dik"],
+          "correction_hint": "chok te-shek-kür-LER, boo-GOON her she-YEE al-DUK.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 152,
+          "speaker": "user",
+          "expected_response": "Çok teşekkürler, bugün her şeyi aldık",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 153,
+          "speaker": "app",
+          "turkish": "Ben yoruldum artık. Eve gideceğim.",
+          "slow_phonetic": "Ben yo-rool-doom ar-tık. E-ve gee-de-je-eem.",
+          "english": "I am tired now. I will go home.",
+          "user_prompt": "Say: I am tired too. It was a very beautiful day.",
+          "expected_response": "Ben de yoruldum. Çok güzel bir gündü",
+          "mispronunciations": ["Yo-rul-dum", "Gun-du"],
+          "correction_hint": "ben de yo-rool-DOOM. chok gue-ZEL beer guen-DUE.",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 154,
+          "speaker": "user",
+          "expected_response": "Ben de yoruldum. Çok güzel bir gündü",
+          "min_score": 0.72
+        },
+        {
+          "line_number": 155,
+          "speaker": "app",
+          "turkish": "Yarın görüşürüz! Kendine iyi bak.",
+          "slow_phonetic": "Ya-rın go-ru-shu-ruz! Ken-dee-ne ee-yee bak.",
+          "english": "See you tomorrow! Take care of yourself.",
+          "user_prompt": "Say: See you! Hope to meet again tomorrow, goodbye.",
+          "expected_response": "Görüşürüz! Yarın tekrar buluşmak üzere, hoşça kal",
+          "mispronunciations": ["Go-ru-su-ruz", "Hos-ca kal"],
+          "correction_hint": "goe-rue-shue-RUEZ! ya-RUN tek-RAR boo-loosh-MAK ue-ze-re, hosh-CHA kal.",
+          "min_score": 0.75
+        },
+        {
+          "line_number": 156,
+          "speaker": "user",
+          "expected_response": "Görüşürüz! Yarın tekrar buluşmak üzere, hoşça kal",
+          "min_score": 0.75
+        }
+      ]
+    }
+  ]
+}

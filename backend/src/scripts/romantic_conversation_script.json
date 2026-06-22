@@ -1,0 +1,417 @@
+{
+  "day": 2,
+  "total_minutes": 10,
+  "new_minutes": 5,
+  "lines": [
+    {
+      "line_number": 51,
+      "speaker": "app",
+      "turkish": "Tekrar hoş geldin John! Bugün yine çok yakışıklısın. Merhaba!",
+      "slow_phonetic": "Tek-rar hosh gel-deen John! Boo-gun yee-ne chok ya-kı-şık-lı-sın. Mer-ha-ba!",
+      "english": "Welcome back, John! You are very handsome again today. Hello!",
+      "user_prompt": "Say hello to Aslı.",
+      "expected_response": "Merhaba",
+      "mispronunciations": ["Mer-HA-ba", "Mer-hab"],
+      "correction_hint": "Keep your tongue flat. Give equal weight to all syllables: MER-ha-ba.",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 52,
+      "speaker": "user",
+      "expected_response": "Merhaba",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 53,
+      "speaker": "app",
+      "turkish": "Sesini duymak içimi ısıttı. Naber John?",
+      "slow_phonetic": "Se-see-nee doy-mak ee-chee-mee ı-sıt-tı. Na-ber John?",
+      "english": "Hearing your voice warmed my heart. What's up, John?",
+      "user_prompt": "Say: What's up? / Fine (Naber).",
+      "expected_response": "Naber",
+      "mispronunciations": ["Nah-beer", "Nay-ber"],
+      "correction_hint": "Blend it into two short syllables: Nah-ber. It's an informal, friendly way to say 'What's up?'.",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 54,
+      "speaker": "user",
+      "expected_response": "Naber",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 55,
+      "speaker": "app",
+      "turkish": "Benden de iyilik, seni sormalı? Her şey yolunda mı?",
+      "slow_phonetic": "Ben-den de ee-yee-leek, se-nee sor-ma-lı? Her shey yo-loon-da mı?",
+      "english": "Goodness from me too, what about you? Is everything on track?",
+      "user_prompt": "Say: Goodness / Fine (İyilik).",
+      "expected_response": "İyilik",
+      "mispronunciations": ["Eye-ee-leek", "Ee-yee-luk"],
+      "correction_hint": "The 'i' sounds are short like 'sit'. Keep it tight: ee-yee-leek.",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 56,
+      "speaker": "user",
+      "expected_response": "İyilik",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 57,
+      "speaker": "app",
+      "turkish": "Harika! Senden 'iyilik' kelimesini duymak çok güzel. Memnun oldun mu?",
+      "slow_phonetic": "Ha-ree-ka! Sen-den 'ee-yee-leek' ke-lee-me-see-nee doy-mak chok gu-zel. Mem-noon ol-doon moo?",
+      "english": "Wonderful! Hearing the word 'goodness' from you is so nice. Are you pleased?",
+      "user_prompt": "Say: Yes (Evet).",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 58,
+      "speaker": "user",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 59,
+      "speaker": "app",
+      "turkish": "Ben de çok memnun oldum centilmen dostum. Peki, bugün nasıl hissediyorsun?",
+      "slow_phonetic": "Ben de chok mem-noon ol-doom jen-teel-men dos-toom. Pe-kee, boo-gun na-sıl hees-se-dee-yor-soon?",
+      "english": "I am very nice to meet you too, my gentleman friend. So, how are you feeling today?",
+      "user_prompt": "Say: Not bad (Fena değil).",
+      "expected_response": "Fena değil",
+      "mispronunciations": ["Fe-na de-gil", "Fe-nah day-el"],
+      "correction_hint": "The 'ğ' is completely silent here, softening the vowel. Say it like: Feh-nah de-yeel.",
+      "min_score": 0.70
+    },
+    {
+      "line_number": 60,
+      "speaker": "user",
+      "expected_response": "Fena değil",
+      "min_score": 0.70
+    },
+    {
+      "line_number": 61,
+      "speaker": "app",
+      "turkish": "Sadece fena değil mi? Seni daha iyi yapabilir miyim?",
+      "slow_phonetic": "Sa-de-je fe-na de-yeel mee? Se-nee da-ha ee-yee ya-pa-bee-leer mee-yeem?",
+      "english": "Just not bad? Can I make you better?",
+      "user_prompt": "Say: Yes (Evet).",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 62,
+      "speaker": "user",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 63,
+      "speaker": "app",
+      "turkish": "O zaman bana tatlı bir sesle tekrar 'naber' de lütfen.",
+      "slow_phonetic": "O za-man ba-na tat-lı beer ses-le tek-rar 'na-ber' de loot-fen.",
+      "english": "Then please say 'what's up' to me again with a sweet voice.",
+      "user_prompt": "Say: Naber.",
+      "expected_response": "Naber",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 64,
+      "speaker": "user",
+      "expected_response": "Naber",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 65,
+      "speaker": "app",
+      "turkish": "Harikasın! Senden duyunca hayat daha enerjik oluyor. Her şey yolunda mı?",
+      "slow_phonetic": "Ha-ree-ka-sın! Sen-den doy-oon-ja ha-yat da-ha e-ner-jeek o-loo-yor. Her shey yo-loon-da mı?",
+      "english": "You are wonderful! When I hear it from you, life becomes more energetic. Is everything okay?",
+      "user_prompt": "Say: Bad (Kötü).",
+      "expected_response": "Kötü",
+      "mispronunciations": ["Ko-tu", "Koh-too"],
+      "correction_hint": "The 'ö' is like the vowel in 'bird'. The 'ü' requires tightly rounded lips. Keo-tue.",
+      "min_score": 0.72
+    },
+    {
+      "line_number": 66,
+      "speaker": "user",
+      "expected_response": "Kötü",
+      "min_score": 0.72
+    },
+    {
+      "line_number": 67,
+      "speaker": "app",
+      "turkish": "Kötü mü? Ah, buna çok üzüldüm John. Seni ne neşelendirir?",
+      "slow_phonetic": "Ko-tu moo? Ah, boo-na chok oo-zul-dum John. Se-nee ne ne-she-len-dee-reer?",
+      "english": "Bad? Oh, I am so sorry to hear that John. What cheers you up?",
+      "user_prompt": "Say: You / Your voice (Senin sesin) or just repeat: İyiyim.",
+      "expected_response": "İyiyim",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 68,
+      "speaker": "user",
+      "expected_response": "İyiyim",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 69,
+      "speaker": "app",
+      "turkish": "Gerçekten şimdi daha iyi misin? Beni rahatlattın.",
+      "slow_phonetic": "Ger-chek-ten sheem-dee da-ha ee-yee mee-seen? Be-nee ra-hat-lat-tın.",
+      "english": "Are you really better now? You relieved me.",
+      "user_prompt": "Say: Yes (Evet).",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 70,
+      "speaker": "user",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 71,
+      "speaker": "app",
+      "turkish": "Çok tatlısın John. Benim için tekrar 'iyilik' der misin?",
+      "slow_phonetic": "Chok tat-lı-sın John. Be-neem ee-cheen tek-rar 'ee-yee-leek' der mee-seen?",
+      "english": "You are very sweet John. Will you say 'goodness' again for me?",
+      "user_prompt": "Say: İyilik.",
+      "expected_response": "İyilik",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 72,
+      "speaker": "user",
+      "expected_response": "İyilik",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 73,
+      "speaker": "app",
+      "turkish": "Ağzına sağlık, ne güzel telaffuz ediyorsun! Teşekkür ederim.",
+      "slow_phonetic": "Ağ-zı-na sah-lık, ne gu-zel te-laf-fooz e-dee-yor-soon! Te-shek-kur e-de-reem.",
+      "english": "Health to your mouth, how beautifully you pronounce it! Thank you.",
+      "user_prompt": "Say: You're welcome (Rica ederim).",
+      "expected_response": "Rica ederim",
+      "min_score": 0.73
+    },
+    {
+      "line_number": 74,
+      "speaker": "user",
+      "expected_response": "Rica ederim",
+      "min_score": 0.73
+    },
+    {
+      "line_number": 75,
+      "speaker": "app",
+      "turkish": "Rica ederken bile çok asilsin. John, bana bir kez daha 'naber' de.",
+      "slow_phonetic": "Ree-ja e-der-ken bee-le chok a-seel-seen. John, ba-na beer kez da-ha 'na-ber' de.",
+      "english": "You are so noble even when saying you're welcome. John, say 'what's up' to me one more time.",
+      "user_prompt": "Say: Naber.",
+      "expected_response": "Naber",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 76,
+      "speaker": "user",
+      "expected_response": "Naber",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 77,
+      "speaker": "app",
+      "turkish": "Bomba gibiyim! Seninle konuşunca moralim tavan yapıyor. Ya sen? Fena değil mi?",
+      "slow_phonetic": "Bom-ba gee-bee-yeem! Se-neen-le ko-noosh-oon-ja mo-ra-leem ta-van ya-pı-yor. Ya sen? Fe-na de-yeel mee?",
+      "english": "I'm like a bomb (great)! When I talk to you my morale hits the ceiling. And you? Not bad?",
+      "user_prompt": "Say: Not bad (Fena değil).",
+      "expected_response": "Fena değil",
+      "min_score": 0.70
+    },
+    {
+      "line_number": 78,
+      "speaker": "user",
+      "expected_response": "Fena değil",
+      "min_score": 0.70
+    },
+    {
+      "line_number": 79,
+      "speaker": "app",
+      "turkish": "Fena değil demene de şükür. Günün nasıl geçiyor?",
+      "slow_phonetic": "Fe-na de-yeel de-me-ne de shoo-kur. Goo-nun na-sıl ge-chee-yor?",
+      "english": "Thank goodness you at least say not bad. How is your day going?",
+      "user_prompt": "Say: Bad (Kötü).",
+      "expected_response": "Kötü",
+      "min_score": 0.72
+    },
+    {
+      "line_number": 80,
+      "speaker": "user",
+      "expected_response": "Kötü",
+      "min_score": 0.72
+    },
+    {
+      "line_number": 81,
+      "speaker": "app",
+      "turkish": "Kötü günleri beraber atlatacağız John, söz veriyorum. Benimle misin?",
+      "slow_phonetic": "Ko-tu goon-le-ree be-ra-ber at-la-ta-ca-ğız John, soz ve-ree-yo-room. Be-neem-le mee-seen?",
+      "english": "We will get through the bad days together John, I promise. Are you with me?",
+      "user_prompt": "Say: Yes (Evet).",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 82,
+      "speaker": "user",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 83,
+      "speaker": "app",
+      "turkish": "İşte benim güçlü erkeğim! Harikasın. Şimdi her şey 'iyilik' mi?",
+      "slow_phonetic": "Eesh-te be-neem gooch-loo er-ke-ğeem! Ha-ree-ka-sın. Sheem-dee her shey 'ee-yee-leek' mee?",
+      "english": "That's my strong man! You are wonderful. Is everything 'goodness' now?",
+      "user_prompt": "Say: İyilik.",
+      "expected_response": "İyilik",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 84,
+      "speaker": "user",
+      "expected_response": "İyilik",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 85,
+      "speaker": "app",
+      "turkish": "Çok sevindim! Bu kelime senin sesine çok yakışıyor. Memnun oldun mu?",
+      "slow_phonetic": "Chok se-veen-deem! Boo ke-lee-me se-neen se-see-ne chok ya-kı-şı-yor. Mem-noon ol-doon moo?",
+      "english": "I'm so glad! This word suits your voice very well. Are you pleased?",
+      "user_prompt": "Say: Yes (Evet).",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 86,
+      "speaker": "user",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 87,
+      "speaker": "app",
+      "turkish": "Ben de seninle buralarda olmaktan çok memnunum John. Teşekkür ederim.",
+      "slow_phonetic": "Ben de se-neen-le boo-ra-lar-da ol-mak-tan chok mem-noo-noom John. Te-shek-kur e-de-reem.",
+      "english": "I am also very pleased to be around here with you, John. Thank you.",
+      "user_prompt": "Say: Thank you (Teşekkür ederim).",
+      "expected_response": "Teşekkür ederim",
+      "min_score": 0.70
+    },
+    {
+      "line_number": 88,
+      "speaker": "user",
+      "expected_response": "Teşekkür ederim",
+      "min_score": 0.70
+    },
+    {
+      "line_number": 89,
+      "speaker": "app",
+      "turkish": "Rica ederim canım benim. Karşılıklı teşekkürler ne güzel. Tekrar 'naber' desene?",
+      "slow_phonetic": "Ree-ja e-de-reem ja-nım be-neem. Kar-şı-lık-lı te-shek-kur-ler ne gu-zel. Tek-rar 'na-ber' de-se-ne?",
+      "english": "You're welcome, my dear. How nice are mutual thanks. Why don't you say 'what's up' again?",
+      "user_prompt": "Say: Naber.",
+      "expected_response": "Naber",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 90,
+      "speaker": "user",
+      "expected_response": "Naber",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 91,
+      "speaker": "app",
+      "turkish": "Her şey harika gidiyor! Seninle konuşmak günümü aydınlatıyor. Nasıl hissediyorsun?",
+      "slow_phonetic": "Her shey ha-ree-ka gee-dee-yor! Se-neen-le ko-noosh-mak goo-noo-moo ay-dın-la-tı-yor. Na-sıl hees-se-dee-yor-soon?",
+      "english": "Everything is going great! Talking to you brightens my day. How do you feel?",
+      "user_prompt": "Say: Not bad (Fena değil).",
+      "expected_response": "Fena değil",
+      "min_score": 0.70
+    },
+    {
+      "line_number": 92,
+      "speaker": "user",
+      "expected_response": "Fena değil",
+      "min_score": 0.70
+    },
+    {
+      "line_number": 93,
+      "speaker": "app",
+      "turkish": "Fena değil mi? Bunu mükemmel yapacağız, bana güven. Mutlu musun?",
+      "slow_phonetic": "Fe-na de-yeel mee? Boo-noo mu-kem-mel ya-pa-ca-ğız, ba-na goo-ven. Moot-loo moos-oon?",
+      "english": "Not bad? We will make it perfect, trust me. Are you happy?",
+      "user_prompt": "Say: Yes (Evet).",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 94,
+      "speaker": "user",
+      "expected_response": "Evet",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 95,
+      "speaker": "app",
+      "turkish": "Harika bir cevap! Enerjin bana geçiyor. Ama zaman ne çabuk akıyor, gitmem gerek.",
+      "slow_phonetic": "Ha-ree-ka beer je-vap! E-ner-jeen ba-na ge-chee-yor. A-ma za-man ne cha-book a-kı-yor, geet-mem ge-rek.",
+      "english": "Wonderful answer! Your energy transfers to me. But time flows so fast, I must go.",
+      "user_prompt": "Say: Goodbye (Görüşürüz).",
+      "expected_response": "Görüşürüz",
+      "min_score": 0.72
+    },
+    {
+      "line_number": 96,
+      "speaker": "user",
+      "expected_response": "Görüşürüz",
+      "min_score": 0.72
+    },
+    {
+      "line_number": 97,
+      "speaker": "app",
+      "turkish": "Görüşürüz demeden önce bana o yakışıklı sesinle son bir kez 'iyilik' der misin?",
+      "slow_phonetic": "Go-ru-shu-ruz de-me-den on-je ba-na o ya-kı-şık-lı se-neen-le son beer kez 'ee-yee-leek' der mee-seen?",
+      "english": "Before saying goodbye, will you say 'goodness' one last time with that handsome voice of yours?",
+      "user_prompt": "Say: İyilik.",
+      "expected_response": "İyilik",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 98,
+      "speaker": "user",
+      "expected_response": "İyilik",
+      "min_score": 0.75
+    },
+    {
+      "line_number": 99,
+      "speaker": "app",
+      "turkish": "Kalbimde derin bir iz bıraktın John. Kendine çok iyi bak, tamam mı?",
+      "slow_phonetic": "Kal-beem-de de-reen beer eez bı-rak-tın John. Ken-dee-ne chok ee-yee bak, ta-mam mı?",
+      "english": "You left a deep mark in my heart John. Take very good care of yourself, okay?",
+      "user_prompt": "Final goodbye: Görüşürüz.",
+      "expected_response": "Görüşürüz",
+      "min_score": 0.72
+    },
+    {
+      "line_number": 100,
+      "speaker": "user",
+      "expected_response": "Görüşürüz",
+      "min_score": 0.72
+    }
+  ]
+}

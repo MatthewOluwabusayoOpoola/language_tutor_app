@@ -1,0 +1,739 @@
+/* ────────────────────────────────────────────────────────────
+   Retro Desktop OS — design system
+   Inspired by a flat, thick-outline "old computer UI" illustration:
+   teal grid sky, chunky black-bordered windows, hot pink / purple /
+   yellow / orange accents, hard offset shadows, mountains & moon.
+   ──────────────────────────────────────────────────────────── */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* palette sampled from the reference illustration */
+  --teal: #8fe3e6;
+  --teal-line: #5fcfd2;
+  --ink: #14141a;
+  --white: #ffffff;
+  --pink: #ed1e79;
+  --pink-soft: #fb6fd6;
+  --purple: #8b5cf6;
+  --purple-deep: #6d3ce8;
+  --yellow: #fcec22;
+  --orange: #faaf3c;
+  --cyan: #3ff0f2;
+  --mint: #2fd99b;
+  --grey: #e9e9ed;
+  --grey-deep: #b8b8c0;
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "Space Mono", "SFMono-Regular", monospace;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+  --border: 2.5px solid var(--ink);
+  --border-thin: 1.75px solid var(--ink);
+
+  --shadow-sm: 4px 4px 0 var(--ink);
+  --shadow-md: 6px 6px 0 var(--ink);
+  --shadow-lg: 9px 9px 0 var(--ink);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-display);
+  color: var(--ink);
+  background-color: var(--teal);
+  background-image: linear-gradient(var(--teal-line) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, var(--teal-line) 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--purple-deep);
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-display);
+}
+
+/* ─── Window chrome (the signature element) ───
+   Every panel/card in the app is dressed as a little desktop window:
+   a dotted title bar + thick black border + hard offset shadow. */
+.win {
+  background: var(--white);
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+.winbar {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: var(--border);
+  background: var(--white);
+}
+.winbar-dots {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+}
+.winbar-dots i {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ink);
+  display: block;
+}
+.winbar-dots i:nth-child(1) {
+  left: 0;
+}
+.winbar-dots i:nth-child(2) {
+  left: 15px;
+}
+.winbar-dots i:nth-child(3) {
+  left: 30px;
+}
+.winbar-dots i:nth-child(4) {
+  left: 45px;
+}
+.winbar-label {
+  margin-left: auto;
+  margin-right: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.winbar--pink {
+  background: var(--pink);
+}
+.winbar--pink .winbar-label {
+  color: var(--white);
+}
+.winbar--purple {
+  background: var(--purple);
+}
+.winbar--purple .winbar-label {
+  color: var(--white);
+}
+.winbar--yellow {
+  background: var(--yellow);
+}
+.winbar--mint {
+  background: var(--mint);
+}
+.winbar--orange {
+  background: var(--orange);
+}
+
+/* ─── Buttons ─── */
+.btn-retro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.95rem;
+  background: var(--white);
+  color: var(--ink);
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1.4rem;
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease,
+    background 0.12s ease,
+    opacity 0.12s ease;
+}
+.btn-retro:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-md);
+}
+.btn-retro:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+.btn-retro:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: var(--shadow-sm);
+}
+.btn-retro--pink {
+  background: var(--pink);
+  color: var(--white);
+}
+.btn-retro--purple {
+  background: var(--purple);
+  color: var(--white);
+}
+.btn-retro--mint {
+  background: var(--mint);
+  color: var(--ink);
+}
+.btn-retro--ghost {
+  background: var(--white);
+  box-shadow: none;
+  border: var(--border-thin);
+}
+.btn-retro--ghost:hover {
+  background: var(--grey);
+  box-shadow: none;
+  transform: none;
+}
+.btn-retro--sm {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.78rem;
+}
+.btn-retro--block {
+  width: 100%;
+}
+
+/* ─── Mono badges / pills (file-id, day-count, score style readouts) ─── */
+.mono-pill {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--white);
+  border: var(--border-thin);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+}
+
+.error {
+  color: var(--white);
+  background: var(--pink);
+  border: var(--border-thin);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.6rem 0.8rem;
+}
+
+/* ─── Decorative bottom scene (mountains/moon/clouds) ─── */
+.retro-scene {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 22vh;
+  min-height: 160px;
+  max-height: 280px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ─── Auth screens ─── */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.auth-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+}
+.auth-card-body {
+  padding: 2.25rem 2rem 2rem;
+}
+.auth-card .brand-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.auth-card h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.auth-card h2 {
+  text-align: center;
+  color: var(--ink);
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.auth-card label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  margin-top: 0.6rem;
+}
+.auth-card input,
+.auth-card select {
+  font-family: var(--font-display);
+  padding: 0.7rem 0.9rem;
+  border: var(--border-thin);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  width: 100%;
+  background: var(--white);
+  color: var(--ink);
+}
+.auth-card input::placeholder {
+  color: var(--grey-deep);
+}
+.auth-card input:focus,
+.auth-card select:focus {
+  outline: none;
+  border-color: var(--ink);
+  box-shadow: 3px 3px 0 var(--purple);
+}
+.auth-card button[type="submit"] {
+  margin-top: 1.1rem;
+}
+.auth-card-body > p:last-child {
+  text-align: center;
+  margin-top: 1.1rem;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+/* ─── Loading ─── */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Dashboard ─── */
+.dashboard {
+  min-height: 100vh;
+  position: relative;
+}
+.dashboard-header {
+  background: var(--white);
+  border-bottom: var(--border);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.dashboard-header h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.btn-logout {
+  font-family: var(--font-mono);
+}
+.dashboard-main {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+.dashboard-main h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.mode-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+.mode-card {
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.mode-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-lg);
+}
+.mode-card.locked {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.mode-card.locked:hover {
+  transform: none;
+  box-shadow: var(--shadow-md);
+}
+.mode-card-body {
+  padding: 1.75rem;
+}
+.mode-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--white);
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.mode-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.mode-card p {
+  opacity: 0.7;
+  font-size: 0.92rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.45;
+}
+.progress-bar-wrap {
+  margin-bottom: 1.1rem;
+}
+.progress-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  opacity: 0.65;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+.progress-bar {
+  height: 14px;
+  background: var(--white);
+  border: var(--border-thin);
+  border-radius: 999px;
+  overflow: hidden;
+  padding: 1.5px;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: var(--cyan);
+  border-radius: 999px;
+  transition: width 0.4s;
+}
+.progress-bar-fill.romantic {
+  background: var(--pink-soft);
+}
+.btn-start {
+  width: 100%;
+}
+.unlock-hint {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  opacity: 0.65;
+  margin-top: 0.4rem;
+}
+
+/* ─── Conversation ─── */
+.conversation-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.conv-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.5rem;
+  background: var(--white);
+  border-bottom: var(--border);
+  position: relative;
+  z-index: 2;
+}
+.btn-back {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: var(--purple-deep);
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+}
+.conv-day-label {
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.conv-progress-label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+.conv-progress-bar {
+  height: 6px;
+  background: var(--white);
+  border-bottom: var(--border-thin);
+  position: relative;
+  z-index: 2;
+}
+.conv-progress-fill {
+  height: 100%;
+  background: var(--purple);
+  transition: width 0.4s;
+}
+.conv-content {
+  flex: 1;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.75rem 1.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+.line-card-body {
+  padding: 1.5rem 1.5rem 1.6rem;
+}
+.line-speaker {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.6rem;
+}
+.expected-response {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--pink);
+  text-transform: none;
+  letter-spacing: normal;
+  display: block;
+  margin-top: 0.3rem;
+  opacity: 1;
+}
+.line-turkish {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.line-phonetic {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  opacity: 0.65;
+  margin-bottom: 0.3rem;
+}
+.line-english {
+  font-size: 0.9rem;
+  opacity: 0.65;
+}
+.line-prompt {
+  font-size: 1.02rem;
+}
+.btn-slow {
+  margin-top: 0.9rem;
+}
+.btn-mic {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.05rem;
+}
+.btn-mic.recording {
+  background: var(--pink);
+  color: var(--white);
+  animation: pulse 1.1s infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+.button-group {
+  display: flex;
+  gap: 0.75rem;
+}
+.button-group .btn-mic {
+  flex: 1;
+}
+
+.result-card-body {
+  padding: 1.6rem;
+  text-align: center;
+}
+.result-card.pass .winbar {
+  background: var(--mint);
+}
+.result-card.fail .winbar {
+  background: var(--orange);
+}
+.result-icon {
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
+}
+.result-score {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+.result-transcript {
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.result-hint {
+  background: var(--yellow);
+  border: var(--border-thin);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.92rem;
+  margin-bottom: 0.6rem;
+}
+.result-attempts {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  opacity: 0.6;
+}
+.btn-next {
+  margin-top: 1rem;
+}
+.error-message {
+  position: relative;
+  z-index: 1;
+}
+.processing-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  opacity: 0.7;
+  font-weight: 600;
+}
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3.5px solid var(--grey);
+  border-top-color: var(--purple);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ─── Day Complete ─── */
+.day-complete {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+.day-complete-card {
+  position: relative;
+  z-index: 1;
+  max-width: 420px;
+  width: 100%;
+}
+.day-complete-card-body {
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+.confetti {
+  font-size: 3.2rem;
+  margin-bottom: 0.75rem;
+}
+.day-complete-card h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.day-complete-card p {
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+.day-complete-card .btn-retro {
+  margin-top: 0.5rem;
+}
+.stt-fallback-banner {
+  position: relative;
+  z-index: 1;
+  background: var(--yellow);
+  border-top: var(--border);
+  padding: 0.9rem 1.25rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 480px) {
+  .auth-card-body {
+    padding: 1.75rem 1.25rem;
+  }
+  .dashboard-header {
+    padding: 0.9rem 1rem;
+  }
+  .header-right span:first-child {
+    display: none;
+  }
+}

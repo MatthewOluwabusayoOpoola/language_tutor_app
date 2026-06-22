@@ -1,0 +1,279 @@
+/* ────────────────────────────────────────────────────────────
+   Disclaimer Modal — Retro Desktop OS Styling
+   Matches the app's thick-border, chunky shadow aesthetic
+   ──────────────────────────────────────────────────────────── */
+
+.disclaimer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--teal);
+  background-image:
+    linear-gradient(var(--teal-line) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, var(--teal-line) 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.disclaimer-modal {
+  background: var(--white);
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  max-width: 700px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  animation: slideInWindow 0.15s ease-out;
+}
+
+@keyframes slideInWindow {
+  from {
+    opacity: 0;
+    transform: translate(-12px, -12px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Title Bar */
+.disclaimer-modal-header {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: var(--border);
+  background: var(--purple);
+  flex-shrink: 0;
+}
+
+.disclaimer-modal-header .winbar-dots {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+}
+
+.disclaimer-modal-header .winbar-dots i {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--white);
+  display: block;
+}
+
+.disclaimer-modal-header .winbar-dots i:nth-child(1) {
+  left: 0;
+}
+
+.disclaimer-modal-header .winbar-dots i:nth-child(2) {
+  left: 15px;
+}
+
+.disclaimer-modal-header .winbar-dots i:nth-child(3) {
+  left: 30px;
+}
+
+.disclaimer-modal-header .winbar-dots i:nth-child(4) {
+  left: 45px;
+}
+
+.disclaimer-modal-label {
+  margin-left: auto;
+  margin-right: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+/* Content Area */
+.disclaimer-body {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.disclaimer-body h1 {
+  font-size: 20px;
+  margin: 0 0 16px 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.disclaimer-intro {
+  font-size: 13px;
+  color: var(--ink);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.disclaimer-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.disclaimer-section {
+  background: var(--white);
+  border: var(--border-thin);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  transition: all 0.12s ease;
+}
+
+.disclaimer-section:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.disclaimer-section.disclaimer-security {
+  border-left: 2.5px solid var(--orange);
+  background-color: rgba(250, 175, 60, 0.08);
+}
+
+.disclaimer-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.disclaimer-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: var(--purple);
+  flex-shrink: 0;
+  border: var(--border-thin);
+  background: var(--white);
+}
+
+.disclaimer-checkbox label {
+  cursor: pointer;
+  color: var(--ink);
+  font-weight: 600;
+  user-select: none;
+  font-size: 13px;
+}
+
+.disclaimer-content {
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.disclaimer-section.disclaimer-security .disclaimer-content {
+  padding-left: 0;
+  font-weight: 600;
+}
+
+/* Footer Actions */
+.disclaimer-footer-section {
+  border-top: var(--border);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.disclaimer-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-accept {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.85rem;
+  background: var(--white);
+  color: var(--ink);
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1.4rem;
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease,
+    background 0.12s ease,
+    opacity 0.12s ease;
+  font-family: var(--font-display);
+  cursor: pointer;
+}
+
+.btn-accept.active {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.btn-accept.active:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-accept.active:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+
+.btn-accept.disabled {
+  background: var(--grey);
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.disclaimer-footer-text {
+  text-align: center;
+  color: var(--ink);
+  font-size: 11px;
+  margin: 0;
+  font-family: var(--font-mono);
+}
+
+/* Scrollbar styling for modal */
+.disclaimer-body::-webkit-scrollbar {
+  width: 12px;
+}
+
+.disclaimer-body::-webkit-scrollbar-track {
+  background: var(--grey);
+  border-left: var(--border-thin);
+}
+
+.disclaimer-body::-webkit-scrollbar-thumb {
+  background: var(--grey-deep);
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+}
+
+.disclaimer-body::-webkit-scrollbar-thumb:hover {
+  background: var(--purple);
+}

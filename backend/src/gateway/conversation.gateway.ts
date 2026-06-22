@@ -94,12 +94,16 @@ export class ConversationGateway
       if (!userId) return client.emit('error', { message: 'Unauthorized' });
 
       const profile = await this.userService.getProfile(userId);
-      const scriptDay = this.scriptService.getDay(data.mode, data.day, {
-        name: profile.name,
-        turkish_nationality: profile.turkish_nationality,
-        turkish_from: profile.turkish_from,
-        turkish_city_locative: profile.turkish_city_locative,
-      });
+      const scriptDay = this.scriptService.getDayCumulative(
+        data.mode,
+        data.day,
+        {
+          name: profile.name,
+          turkish_nationality: profile.turkish_nationality,
+          turkish_from: profile.turkish_from,
+          turkish_city_locative: profile.turkish_city_locative,
+        },
+      );
 
       const line = scriptDay?.lines.find(
         (l) => l.line_number === data.line_number,
@@ -124,7 +128,7 @@ export class ConversationGateway
       );
 
       if (passed) {
-        // Advance progress
+        // Advance progress with cumulative total lines
         const totalLines = scriptDay!.lines.length;
         const updatedProgress = await this.progressService.advanceLine(
           userId,
@@ -175,12 +179,16 @@ export class ConversationGateway
       if (!userId) return client.emit('error', { message: 'Unauthorized' });
 
       const profile = await this.userService.getProfile(userId);
-      const scriptDay = this.scriptService.getDay(data.mode, data.day, {
-        name: profile.name,
-        turkish_nationality: profile.turkish_nationality,
-        turkish_from: profile.turkish_from,
-        turkish_city_locative: profile.turkish_city_locative,
-      });
+      const scriptDay = this.scriptService.getDayCumulative(
+        data.mode,
+        data.day,
+        {
+          name: profile.name,
+          turkish_nationality: profile.turkish_nationality,
+          turkish_from: profile.turkish_from,
+          turkish_city_locative: profile.turkish_city_locative,
+        },
+      );
 
       const line = scriptDay?.lines.find(
         (l) => l.line_number === data.line_number,
@@ -207,7 +215,7 @@ export class ConversationGateway
       );
 
       if (passed) {
-        // Advance progress
+        // Advance progress with cumulative total lines
         const totalLines = scriptDay!.lines.length;
         const updatedProgress = await this.progressService.advanceLine(
           userId,

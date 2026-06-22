@@ -36,6 +36,7 @@ export default function ConversationPage() {
   );
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [userName, setUserName] = useState<string>("Matthew"); // Default fallback
+  const [showHelper, setShowHelper] = useState(false);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const recognitionRef = useRef<any | null>(null);
@@ -44,6 +45,17 @@ export default function ConversationPage() {
 
   const currentLine: ScriptLine | undefined =
     scriptDay?.lines[currentLineIndex];
+
+  // For user-turn lines, get helper data from the previous app line
+  const getHelperLineData = (): ScriptLine | undefined => {
+    if (!scriptDay || !currentLine) return undefined;
+    if (currentLine.speaker !== "user") return currentLine;
+    // Find previous line (should be the app line with the prompt)
+    const prevLine = scriptDay.lines[currentLineIndex - 1];
+    return prevLine?.speaker === "app" ? prevLine : undefined;
+  };
+
+  const helperLineData = getHelperLineData();
 
   const SpeechRecognitionClass =
     typeof window !== "undefined"
@@ -64,19 +76,23 @@ export default function ConversationPage() {
     setPhase("user-turn");
   }, []);
 
-  const { requestTts, sendAudio, submitTranscript } =
-    useConversationSocket({
-      onTtsAudio: (audio, _slow) => playBase64Audio(audio),
-      onPronunciationResult: (result) => {
-        setLastResult(result);
-        setPhase(result.passed ? "result-pass" : "result-fail");
-      },
-      onError: (msg) => {
-        console.error("Socket error:", msg);
-        setPhase("user-turn");
-      },
-      onTtsEnd: handleTtsEnd,
-    });
+  const { requestTts, sendAudio, submitTranscript } = useConversationSocket({
+    onTtsAudio: (audio, _slow) => playBase64Audio(audio),
+    onPronunciationResult: (result) => {
+      setLastResult(result);
+      // Update currentDay if server returned updated progress (only day, not line)
+      // The line index will be incremented by handleNext() to avoid double-incrementing
+      if (result.passed && result.progress) {
+        setCurrentDay(result.progress.current_day);
+      }
+      setPhase(result.passed ? "result-pass" : "result-fail");
+    },
+    onError: (msg) => {
+      console.error("Socket error:", msg);
+      setPhase("user-turn");
+    },
+    onTtsEnd: handleTtsEnd,
+  });
 
   // Load script and progress on mount
   useEffect(() => {
@@ -130,7 +146,11 @@ export default function ConversationPage() {
     getScript(mode, currentDay).then(({ data }) => {
       const scriptWithUserName = substituteUserNameInScript(data, userName);
       setScriptDay(scriptWithUserName);
-      setPhase("app-speaking");
+      // Only set phase to app-speaking if we're in loading phase (initial load)
+      // This prevents overriding result screens when day changes
+      setPhase((prevPhase) =>
+        prevPhase === "loading" ? "app-speaking" : prevPhase,
+      );
     });
   }, [mode, currentDay, userName]);
 
@@ -272,6 +292,7 @@ export default function ConversationPage() {
       setPhase("app-speaking");
       setLastResult(null);
     }
+    setShowHelper(false);
   };
 
   const handleSlowPlay = () => {
@@ -346,6 +367,14 @@ export default function ConversationPage() {
         </span>
         <span className="conv-progress-label mono-pill">
           {currentLineIndex + 1}/{totalLines}
+          {currentLine?.is_review && (
+            <span
+              title="Review line from previous day"
+              style={{ marginLeft: "6px" }}
+            >
+              🔁 Review
+            </span>
+          )}
         </span>
       </div>
 
@@ -361,10 +390,28 @@ export default function ConversationPage() {
       <div className="conv-content">
         {/* App line display */}
         {currentLine.turkish && (
-          <div className="line-card app-line win">
-            <WinBar label="app.tts" tone="purple" />
+          <div
+            className={`line-card app-line win ${currentLine.is_review ? "review-line" : ""}`}
+          >
+            <WinBar
+              label={currentLine.is_review ? "app.tts (review)" : "app.tts"}
+              tone={currentLine.is_review ? "orange" : "purple"}
+            />
             <div className="line-card-body">
-              <div className="line-speaker">🤖 App</div>
+              <div className="line-speaker">
+                🤖 App{" "}
+                {currentLine.is_review && (
+                  <span
+                    style={{
+                      fontSize: "0.85em",
+                      marginLeft: "8px",
+                      color: "#ff9800",
+                    }}
+                  >
+                    🔁 Review
+                  </span>
+                )}
+              </div>
               <p className="line-turkish">{currentLine.turkish}</p>
               {currentLine.slow_phonetic && (
                 <p className="line-phonetic">{currentLine.slow_phonetic}</p>
@@ -372,7 +419,10 @@ export default function ConversationPage() {
               {currentLine.english && (
                 <p className="line-english">{currentLine.english}</p>
               )}
-              <button className="btn-retro btn-retro--ghost btn-retro--sm btn-slow" onClick={handleSlowPlay}>
+              <button
+                className="btn-retro btn-retro--ghost btn-retro--sm btn-slow"
+                onClick={handleSlowPlay}
+              >
                 🐢 Slow
               </button>
             </div>
@@ -381,18 +431,87 @@ export default function ConversationPage() {
 
         {/* User prompt */}
         {currentLine.speaker === "user" && (
-          <div className="line-card user-line win">
-            <WinBar label="your-turn.mic" tone="pink" />
+          <div
+            className={`line-card user-line win ${currentLine.is_review ? "review-line" : ""}`}
+          >
+            <WinBar
+              label={
+                currentLine.is_review
+                  ? "your-turn.mic (review)"
+                  : "your-turn.mic"
+              }
+              tone={currentLine.is_review ? "orange" : "pink"}
+            />
             <div className="line-card-body">
-              <div className="line-speaker">
-                🎤 You
-                {currentLine.expected_response && (
-                  <span className="expected-response">
-                    {" "}
-                    — Say: {currentLine.expected_response}
-                  </span>
-                )}
+              <div className="line-speaker-row">
+                <div className="line-speaker">
+                  🎤 You{" "}
+                  {currentLine.is_review && (
+                    <span
+                      style={{
+                        fontSize: "0.85em",
+                        marginLeft: "8px",
+                        color: "#ff9800",
+                      }}
+                    >
+                      🔁 Review
+                    </span>
+                  )}
+                  {currentLine.expected_response && (
+                    <span className="expected-response">
+                      {" "}
+                      — Say: {currentLine.expected_response}
+                    </span>
+                  )}
+                </div>
+                {/* Hamburger menu button */}
+                <button
+                  className={`btn-helper-menu ${showHelper ? "active" : ""}`}
+                  onClick={() => setShowHelper(!showHelper)}
+                  title="Show helper tips"
+                >
+                  ☰
+                </button>
               </div>
+
+              {/* Helper menu - collapsible */}
+              {showHelper && (
+                <div className="helper-menu">
+                  <p className="helper-title">📚 Need Helper?</p>
+
+                  {/* Show pronunciation hint (correction_hint) */}
+                  {helperLineData?.correction_hint && (
+                    <div className="helper-item">
+                      <p className="helper-label">🗣️ Pronunciation:</p>
+                      <p className="helper-content">
+                        {helperLineData.correction_hint}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Show meaning/translation (user_prompt without "say:") */}
+                  {helperLineData?.user_prompt && (
+                    <div className="helper-item">
+                      <p className="helper-label">📖 Meaning:</p>
+                      <p className="helper-content">
+                        {helperLineData.user_prompt.replace(/^say:\s*/i, "")}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Show common mispronunciations */}
+                  {helperLineData?.mispronunciations &&
+                    helperLineData.mispronunciations.length > 0 && (
+                      <div className="helper-item">
+                        <p className="helper-label">❌ Avoid:</p>
+                        <p className="helper-content">
+                          {helperLineData.mispronunciations.join(", ")}
+                        </p>
+                      </div>
+                    )}
+                </div>
+              )}
+
               {currentLine.user_prompt && (
                 <p className="line-prompt">{currentLine.user_prompt}</p>
               )}
@@ -415,7 +534,33 @@ export default function ConversationPage() {
               <p className="result-transcript">
                 You said: "<em>{lastResult.transcript}</em>"
               </p>
-              <button className="btn-retro btn-retro--mint btn-next" onClick={handleNext}>
+
+              {/* Show expected response */}
+              <div className="result-helper">
+                <p className="result-label">Expected:</p>
+                <p className="result-value">{lastResult.expected}</p>
+              </div>
+
+              {/* Show meaning/translation */}
+              {currentLine?.english && (
+                <div className="result-helper">
+                  <p className="result-label">📖 Meaning:</p>
+                  <p className="result-value">{currentLine.english}</p>
+                </div>
+              )}
+
+              {/* Show pronunciation hint */}
+              {currentLine?.slow_phonetic && (
+                <div className="result-helper">
+                  <p className="result-label">🗣️ Pronunciation:</p>
+                  <p className="result-value">{currentLine.slow_phonetic}</p>
+                </div>
+              )}
+
+              <button
+                className="btn-retro btn-retro--mint btn-next"
+                onClick={handleNext}
+              >
                 Next →
               </button>
             </div>
@@ -433,9 +578,48 @@ export default function ConversationPage() {
               <p className="result-transcript">
                 You said: "<em>{lastResult.transcript}</em>"
               </p>
-              {lastResult.correction_hint && (
-                <p className="result-hint">💡 {lastResult.correction_hint}</p>
+
+              {/* Show expected response */}
+              <div className="result-helper">
+                <p className="result-label">Expected:</p>
+                <p className="result-value">{lastResult.expected}</p>
+              </div>
+
+              {/* Show meaning/translation */}
+              {currentLine?.english && (
+                <div className="result-helper">
+                  <p className="result-label">📖 Meaning:</p>
+                  <p className="result-value">{currentLine.english}</p>
+                </div>
               )}
+
+              {/* Show pronunciation hint */}
+              {currentLine?.slow_phonetic && (
+                <div className="result-helper">
+                  <p className="result-label">🗣️ Pronunciation:</p>
+                  <p className="result-value">{currentLine.slow_phonetic}</p>
+                </div>
+              )}
+
+              {/* Show correction hint */}
+              {lastResult.correction_hint && (
+                <div className="result-helper">
+                  <p className="result-label">💡 Hint:</p>
+                  <p className="result-value">{lastResult.correction_hint}</p>
+                </div>
+              )}
+
+              {/* Show common mispronunciations */}
+              {lastResult.mispronunciations &&
+                lastResult.mispronunciations.length > 0 && (
+                  <div className="result-helper">
+                    <p className="result-label">❌ Avoid:</p>
+                    <p className="result-value">
+                      {lastResult.mispronunciations.join(", ")}
+                    </p>
+                  </div>
+                )}
+
               <p className="result-attempts">
                 Attempt {lastResult.attempt_count}
               </p>
@@ -456,7 +640,12 @@ export default function ConversationPage() {
             <WinBar label="error" tone="pink" />
             <div className="line-card-body">
               <p>{errorMessage}</p>
-              <button className="btn-retro btn-retro--pink btn-retro--sm" onClick={() => setErrorMessage("")}>Dismiss</button>
+              <button
+                className="btn-retro btn-retro--pink btn-retro--sm"
+                onClick={() => setErrorMessage("")}
+              >
+                Dismiss
+              </button>
             </div>
           </div>
         )}

@@ -1,4 +1,4 @@
-export type ConversationMode = 'normal' | 'romantic';
+export type ConversationMode = "normal" | "romantic";
 
 export interface User {
   id: string;
@@ -31,7 +31,7 @@ export interface AllProgress {
 
 export interface ScriptLine {
   line_number: number;
-  speaker: 'app' | 'user';
+  speaker: "app" | "user";
   turkish?: string;
   slow_phonetic?: string;
   english?: string;
@@ -40,6 +40,7 @@ export interface ScriptLine {
   mispronunciations?: string[];
   correction_hint?: string;
   min_score: number;
+  is_review?: boolean; // true if this line is from a previous day (cumulative review)
 }
 
 export interface ScriptDay {
